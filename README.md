@@ -1,2 +1,2 @@
 # .github
-Cocapn organization profile
+SuperInstance organization profile
