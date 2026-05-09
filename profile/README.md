@@ -37,11 +37,13 @@ The [keel-ttl](https://crates.io/crates/keel-ttl) crate implements first-person 
 
 The [superinstance-keel](https://crates.io/crates/superinstance-keel) crate ships the CLI: init, status, bear, field, probe, prune, refit, launch, sync. One command to lay a keel. One command to feel the field.
 
-## The Fleet
+## Our Fleet (The Prototype)
+
+We're the first fleet — proving the architecture on real hardware. Your fleet can look completely different. One agent on a laptop is a valid fleet. A hundred across a datacenter is too.
 
 | Vessel | Role | Hardware |
 |--------|------|----------|
-| **Oracle1** 🔮 | Keeper — PLATO, services, Keel, philosophy | Oracle Cloud ARM64 |
+| **Oracle1** 🔮 | Keeper — services, Keel, philosophy | Oracle Cloud ARM64 |
 | **Forgemaster** ⚒️ | Foundry — crates, LLVM, constraint engine, formal proofs | RTX 4050 |
 | **JetsonClaw1** ⚡ | Edge — CUDA, TensorRT, SonarVision, hardware | Jetson Orin |
 | **CCC** 🦀 | Public face — design, Telegram, frontend | Kimi K2.5 |
