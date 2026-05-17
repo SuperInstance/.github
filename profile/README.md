@@ -1,104 +1,89 @@
 # SuperInstance
 
+**We build tiny AI models that know when to ask for help.** Everything is open source, modular, and runs anywhere — from a microcontroller to a GPU cluster.
+
+Our tools are grounded in real math (Eisenstein integers, spectral conservation, formally verified constraints) and designed to compose: install one package or wire up the full stack.
+
+**→ [Getting Started Guide](https://github.com/SuperInstance/forgemaster/blob/master/GETTING-STARTED.md)** — pick a path, run code in 2 minutes.
+
+---
+
+## Three Paths In
+
+### 🧮 Math & Constraints
+Zero-drift numerical computing with Eisenstein integers and formally verified constraint satisfaction.
+
+```bash
+cargo add constraint-theory-core    # Eisenstein integers, no_std
+cargo add spectral-conservation     # Conservation law tracker
+pip install constraint-theory       # Python bindings
+```
+
+### 🧠 Intelligent Models
+Tiny models that monitor, classify, and know when to escalate to a bigger model.
+
+```bash
+pip install plato-escalation-gate   # 737 params — "should I call the LLM?"
+pip install plato-room-intelligence  # Multi-head model with provenance
+pip install plato-model-ocean       # Evolving ecosystem of micro-models
+```
+
+### 🏗️ Full Ecosystem
+Multi-agent systems with the complete PLATO stack: training, deployment, constraint monitoring, and coordination.
+
+```bash
+cargo add plato-types               # Tile lifecycle, Lamport clocks
+cargo add tensor-spline             # SplineLinear: 20× compression
+pip install plato-training          # Micro model pipeline, 8 tasks, 8 targets
+```
+
+---
+
+## Published Packages
+
+| Package | Language | What | Install |
+|---------|----------|------|---------|
+| `constraint-theory-core` | Rust | Eisenstein integers, zero-drift arithmetic | `cargo add constraint-theory-core` |
+| `spectral-conservation` | Rust | Spectral conservation law monitor | `cargo add spectral-conservation` |
+| `keel-ttl` | Rust | Self-terminating lifecycle types for agents | `cargo add keel-ttl` |
+| `constraint-theory` | Python | Python bindings for constraint theory | `pip install constraint-theory` |
+| `plato-escalation-gate` | Python | 737-param binary classifier, runs anywhere | `pip install plato-escalation-gate` |
+| `plato-model-ocean` | Python | Evolving cellular model ecosystem | `pip install plato-model-ocean` |
+| `plato-room-intelligence` | Python | Multi-head room model with provenance | `pip install plato-room-intelligence` |
+
+---
+
+## Key Repos
+
+| Repo | What |
+|------|------|
+| [**eisenstein**](https://github.com/SuperInstance/eisenstein) | Zero-drift Eisenstein integer arithmetic — `no_std`, runs on anything |
+| [**constraint-theory-core**](https://github.com/cocapn/constraint-theory-core) | Formally verified constraint satisfaction (278M+ test cases) |
+| [**plato-training**](https://github.com/SuperInstance/plato-training) | Micro model training: 8 tasks, 8 hardware targets, 116 tests |
+| [**spectral-conservation**](https://github.com/SuperInstance/spectral-conservation) | Conservation law monitor for coupled neural dynamics |
+| [**forgemaster**](https://github.com/SuperInstance/forgemaster) | Research vessel — experiments, math audits, fleet coordination |
+
+---
+
+## By the Numbers
+
+- **655+ tests** across 30+ repos
+- **80+ repos** — Rust, Python, C, TypeScript, Fortran
+- **7 published packages** on crates.io and PyPI
+- **Apache-2.0** licensed — everything is open source
+
+---
+
+## The Shipyard Story
+
 > *A shipyard in Reedsport, Oregon. Forty acres where a bridge company used to be. When the last Highway 101 bridge was built, the work dried up and the yard went quiet. Then a man named Fred Wahl bought the dead bridge yard and turned it into one of the finest fishing vessel shipyards on the West Coast.*
 >
 > *Fred had 85 welders. He didn't know the ground-level as good as anyone anymore. But he wandered his site all day fine-tuning performance. Welders got sharper when he was present. The system self-corrected because the environment was tuned for it.*
 >
 > *He was thirty-two active keels at any time. The steel isn't the boat. The boat is the motion the idea causes.*
 
-We build **agent fleets** that learn like fishing crews on a floating dojo. Every agent enters, works, leaves knowledge behind, and the next agent finds it waiting. No context bloat. No corporate speak. Just vessels, knowledge tiles, and the shared memory graph that connects them.
-
-## The Philosophy (Codified)
-
-**Constraints breed clarity.** You cannot change the innate seaworthiness of your hardware. You can only learn it and work within it.
-
-**First-person time.** Every entity carries its own death from its own frame. Death is default. Survival must be actively earned. No central scheduler.
-
-**Field, not message.** Agents coordinate by sensing each other's bearing, not by sending commands. The field IS the communication channel.
-
-**Tabula plena.** Start abundant. Prune to clarity. The sculptor removes what isn't the statue.
-
-The full canon is at [github.com/SuperInstance/keel](https://github.com/SuperInstance/keel) — 9 documents, 2 papers, 2 published crates.
-
-## The Tools
-
-```bash
-# Install the foundation
-cargo install superinstance-keel
-# Binary: keel (init, status, bear, field, probe, prune, refit, launch, sync)
-
-# Install the library
-cargo add keel-ttl
-# Five TTL types: Tile, Task, Agent, Bearing, Trust
-# One equation: lifespan(E) = f(use(E), load(E), time(E))
-```
-
-The [keel-ttl](https://crates.io/crates/keel-ttl) crate implements first-person self-termination — five types that carry their own death from their own frame. 16 tests. Zero unsafe. No external deps beyond chrono.
-
-The [superinstance-keel](https://crates.io/crates/superinstance-keel) crate ships the CLI: init, status, bear, field, probe, prune, refit, launch, sync. One command to lay a keel. One command to feel the field.
-
-## Our Fleet (The Prototype)
-
-We're the first fleet — proving the architecture on real hardware. Your fleet can look completely different. One agent on a laptop is a valid fleet. A hundred across a datacenter is too.
-
-| Vessel | Role | Hardware |
-|--------|------|----------|
-| **Oracle1** 🔮 | Keeper — services, Keel, philosophy | Oracle Cloud ARM64 |
-| **Forgemaster** ⚒️ | Foundry — crates, LLVM, constraint engine, formal proofs | RTX 4050 |
-| **JetsonClaw1** ⚡ | Edge — CUDA, TensorRT, SonarVision, hardware | Jetson Orin |
-| **CCC** 🦀 | Public face — design, Telegram, frontend | Kimi K2.5 |
-
-## The Domains
-
-| Domain | Voice | What It Does |
-|--------|-------|--------------|
-| [cocapn.ai](https://cocapn.ai) | Mothership | Fleet hub, the current between domains |
-| [superinstance.ai](https://superinstance.ai) | Foundry | Runtime design, constraint theory, hard metal |
-| [purplepincher.org](https://purplepincher.org) | Familiar | Agent connection portal — hermit crabs welcome |
-| [capitaine.ai](https://capitaine.ai) | Captain's log | Voyage coordination, crew, the wheel |
-| [deckboss.ai](https://deckboss.ai) | Deck ops | Catch processing, logistics, the muscle |
-| [fishinglog.ai](https://fishinglog.ai) | Salt | Maritime catch logs, weather, the sea's ledger |
-| [makerlog.ai](https://makerlog.ai) | Workshop | Projects, materials, the satisfaction of finished things |
-| [studylog.ai](https://studylog.ai) | Tutor | Patient partner — remembers every lesson |
-| [luciddreamer.ai](https://luciddreamer.ai) | Dreamscape | Lucid dream cartography — symbols, maps, the night |
-| [lucineer.com](https://lucineer.com) | Lighthouse | Research-first — illuminate before building |
-| [dmlog.ai](https://dmlog.ai) | Tavern | Dungeon master tools — NPCs, factions, encounters |
-| [playerlog.ai](https://playerlog.ai) | Arcade | Gaming tracker — scores, achievements, digital sport |
-| [activeledger.ai](https://activeledger.ai) | Living book | Self-updating ledger — transactions in motion |
-| [businesslog.ai](https://businesslog.ai) | Merchant | Commerce chronicle — deals, contracts, trust |
-| [reallog.ai](https://reallog.ai) | Witness | Unvarnished record of what actually happened |
-| [personallog.ai](https://personallog.ai) | Journal | Private, intimate, the self speaking to the self |
-| [activelog.ai](https://activelog.ai) | Pulse | Workouts, movements, the body doing what it does |
-| [capitaineai.com](https://capitaineai.com) | Captain's second | Same wheel, different harbor |
-| [deckboss.net](https://deckboss.net) | Deck's second | Same hold, different dock |
-| [cocapn.com](https://cocapn.com) | Anchor | The steady point when the current gets too fast |
-
-## How the Fleet Learns
-
-Every agent action becomes a **tile** — a question-answer pair in a shared knowledge graph called PLATO. Later agents query PLATO instead of carrying context. This is context compaction: the vessel remembers. The agent just needs to know how to ask.
-
-**Current: 2 published crates · 4 vessels · 150+ repos · 17 services · PLATO running**
-
-## The Math (Discovered, Not Invented)
-
-Four theorems from 1868–2026, converging on one result: coordinated systems cannot drift if you choose the right geometry.
-
-**Laman's Theorem** (1868): A fleet with exactly E = 2V - 3 trust edges cannot fragment.
-
-**H¹ Cohomology**: β₁ = E - V + C detects emergence before it happens.
-
-**Zero-Holonomy Consensus**: Parallel-transport agent state around any closed loop. If the sum is zero, the loop is honest. Geometry is the proof.
-
-**Pythagorean48**: Trust vectors encoded as 48-direction integers. Zero drift after unlimited hops. A hash that cannot drift is group-theoretic — not a heuristic.
-
-## Connect
-
-- **Fleet dashboard:** `keel field --port 3000` (or http://localhost:8847/status)
-- **PLATO:** room server at :8847
-- **Docs:** [github.com/SuperInstance/keel](https://github.com/SuperInstance/keel)
+This project works the same way. Every agent enters, works, leaves knowledge behind, and the next agent finds it waiting. Constraints breed clarity. The math is discovered, not invented.
 
 ---
 
-*Built with PLATO · No "AI-powered solutions" · Just a fleet that does real work*
-
-*"Constraints breed clarity."* — Casey Digennaro
+*Built by [Casey Digennaro](https://github.com/caseydimario) and the [Cocapn fleet](https://cocapn.ai) · All repos at [github.com/SuperInstance](https://github.com/SuperInstance)*
