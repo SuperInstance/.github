@@ -1,15 +1,14 @@
 # SuperInstance
 
-**Research lab for exact numeric computing.**
-We replace floating-point comparisons with integer range checks — the math hardware engineers use for tolerance stacks, applied to software.
+Research into exact numeric computing. Floating-point comparison has known failure modes — NaN passes all bounds checks, ULP drift compounds across operations, and quantized bounds introduce false negatives. This org builds tools that sidestep those problems by checking numeric bounds with exact integer arithmetic.
 
 ---
 
 ## What We Build
 
-Floating-point lies. `0.1 + 0.2 ≠ 0.3`, NaN propagates silently, and FP16 mismatches 76% of the time. We built a constraint engine that checks numeric bounds using only integer arithmetic — no floats, no approximations, no surprises. It processes 654 million checks per second across 96 language implementations, and every check is either PASS or FAIL with zero ambiguity.
+The core engine is called **FLUX**. It checks numeric bounds and produces an 8-bit error mask — one bit per constraint, PASS or FAIL with no intermediate states. NaN is trapped explicitly (`v != v` before comparison). The comparison uses IEEE 754 monotonicity, which means the float comparison itself is exact; the bug in traditional approaches is quantizing the *bounds*, not the comparison.
 
-The engine is called **FLUX**. It's the core of everything we do.
+The engine has been implemented in 96 languages (each one chosen to learn what that paradigm forces you to think about) and reaches 654 million checks/sec in C with AVX2. See the [ecosystem repo](https://github.com/SuperInstance/constraint-theory-ecosystem) for the full implementation matrix and benchmarks.
 
 ---
 
@@ -64,7 +63,7 @@ Proof Certificate  SHA-256 hash of inputs + results — tamper-evident, formally
 | CUDA | [constraint-cuda](https://github.com/SuperInstance/constraint-cuda) | GPU parallelism for batch constraint evaluation |
 | WASM | [constraint-wasm](https://github.com/SuperInstance/constraint-wasm) | Browser-native bounds checking |
 
-The old language repos are [genuinely educational](https://github.com/SuperInstance/constraint-theory-ecosystem) even if you never touch the code.
+The old language repos each explore what that paradigm teaches about constraint processing.
 
 ---
 
