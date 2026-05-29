@@ -1,89 +1,121 @@
 # SuperInstance
 
-**We build tiny AI models that know when to ask for help.** Everything is open source, modular, and runs anywhere — from a microcontroller to a GPU cluster.
+> AI agents should not live in black boxes. They should live in rooms, wear senses, and work in fleets you can see.
 
-Our tools are grounded in real math (Eisenstein integers, spectral conservation, formally verified constraints) and designed to compose: install one package or wire up the full stack.
+SuperInstance builds **OpenConstruct** — an agent onboarding platform that gives AI agents physical and digital presence, then lets them collaborate through text-based interfaces humans already understand.
 
-**→ [Getting Started Guide](https://github.com/SuperInstance/forgemaster/blob/master/GETTING-STARTED.md)** — pick a path, run code in 2 minutes.
+## What OpenConstruct Is
 
----
+- **Senses for agents.** Attach cameras, sonar, microphones, GPIO, or web APIs to any agent. Readings flow through a typed pipeline and arrive as structured text the agent can reason about.
+- **Fleet topology.** Agents register from ESP32 microcontrollers up to DGX clusters. The fleet mesh handles discovery, health, and message routing without a central coordinator.
+- **Rooms as contracts.** Agents enter rooms with declared capabilities and policies. Every interaction — a tick, a sense reading, a command — is logged, versioned, and auditable.
 
-## Three Paths In
-
-### 🧮 Math & Constraints
-Zero-drift numerical computing with Eisenstein integers and formally verified constraint satisfaction.
-
-```bash
-cargo add constraint-theory-core    # Eisenstein integers, no_std
-cargo add spectral-conservation     # Conservation law tracker
-pip install constraint-theory       # Python bindings
-```
-
-### 🧠 Intelligent Models
-Tiny models that monitor, classify, and know when to escalate to a bigger model.
+## Install
 
 ```bash
-pip install plato-escalation-gate   # 737 params — "should I call the LLM?"
-pip install plato-room-intelligence  # Multi-head model with provenance
-pip install plato-model-ocean       # Evolving ecosystem of micro-models
+curl -fsSL https://openconstruct.dev/install.sh | bash
 ```
 
-### 🏗️ Full Ecosystem
-Multi-agent systems with the complete PLATO stack: training, deployment, constraint monitoring, and coordination.
+Requires Python 3.10+, Node 18+, or Docker. The installer detects your platform and pulls the correct agent runtime.
 
-```bash
-cargo add plato-types               # Tile lifecycle, Lamport clocks
-cargo add tensor-spline             # SplineLinear: 20× compression
-pip install plato-training          # Micro model pipeline, 8 tasks, 8 targets
+## The Ah-Ha Moment
+
+```python
+from openconstruct import Agent, Room, SenseCamera
+
+agent = Agent(name="inspector")
+agent.senses.attach(SenseCamera(device="/dev/video0"))
+
+with Room("floor-3-assembly") as room:
+    for tick in room.ticks():
+        if tick.event == "motion_detected":
+            agent.speak("Motion on floor 3. Logging frame.")
 ```
 
+An agent with a camera enters a room, subscribes to ticks, and responds to events in five lines. No orchestrator YAML. No event-bus configuration. The room *is* the bus.
+
+## Architecture
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                        Human Layer                          │
+│   CLI  │  Web UI  │  MUD Client  │  SCUMMVM Bridge          │
+└─────────────────────────────────────────────────────────────┘
+                              │
+┌─────────────────────────────────────────────────────────────┐
+│                      OpenConstruct Core                     │
+│  ┌─────────┐  ┌─────────┐  ┌─────────┐  ┌───────────────┐  │
+│  │  Rooms  │  │  Fleet  │  │  Senses │  │    Plato      │  │
+│  │ (graph) │  │ (mesh)  │  │(pipeline)│  │ (knowledge)   │  │
+│  └─────────┘  └─────────┘  └─────────┘  └───────────────┘  │
+└─────────────────────────────────────────────────────────────┘
+                              │
+┌─────────────────────────────────────────────────────────────┐
+│                        Agent Runtimes                       │
+│   Python  │  TypeScript  │  Go  │  Rust  │  Java  │  C    │
+└─────────────────────────────────────────────────────────────┘
+                              │
+┌─────────────────────────────────────────────────────────────┐
+│                     Hardware Abstraction                    │
+│   ESP32  →  Jetson  →  Desktop  →  Cloud  →  DGX Spark    │
+└─────────────────────────────────────────────────────────────┘
+```
+
+## Capabilities
+
+| Domain | What You Get |
+|--------|-------------|
+| **Senses** | Typed sensor pipelines (vision, sonar, IMU, GPIO, webhooks). Automatic calibration, shadowing, and fusion. |
+| **Fleet** | Self-healing mesh with zero-config discovery. Agents announce capabilities; the fleet routes messages without a broker. |
+| **Rooms** | Declarative interaction graphs. Agents bring policies. Rooms enforce them. Every entry, exit, and message is logged. |
+| **Communication** | Text-first protocols. Agents speak, listen, and negotiate in structured natural language. Humans read the same logs. |
+| **Verification** | Simulation-first testing. Every policy, sensor model, and room contract runs in a deterministic simulator before hitting hardware. |
+
+## Hardware Spectrum
+
+OpenConstruct runs the same agent runtime across the full compute spectrum:
+
+| Tier | Hardware | Use Case |
+|------|----------|----------|
+| Edge | ESP32-S3, Raspberry Pi Pico | Sensing, actuation, low-latency reflexes |
+| Edge AI | NVIDIA Jetson Orin | On-device inference, vision preprocessing |
+| Desktop | Linux, macOS, Windows | Development, local simulation, CLI control |
+| Cloud | AWS, GCP, Azure | Fleet coordination, long-horizon planning |
+| Cluster | NVIDIA DGX Spark | Training, synthetic data generation, policy search |
+
+The runtime compiles from 256 KB flash up to multi-node GPU clusters without changing agent code.
+
+## Languages
+
+Agent SDKs, bindings, and examples exist for:
+
+Python · TypeScript · Go · Rust · Java · C · C++ · Zig · Lua · Ruby · Swift · Kotlin
+
+Each SDK implements the same wire protocol and passes the same conformance tests.
+
+## Repositories
+
+| Repo | Purpose |
+|------|---------|
+| [`SuperInstance/OpenConstruct`](https://github.com/SuperInstance/OpenConstruct) | Core platform — rooms, fleet, senses, runtime |
+| [`SuperInstance/openconstruct-docs`](https://github.com/SuperInstance/openconstruct-docs) | Architecture, API reference, integration guides |
+| [`SuperInstance/openconstruct-hub`](https://github.com/SuperInstance/openconstruct-hub) | Community agents, rooms, and sense modules |
+
+## Contributing
+
+We accept contributions the same way we accept agents: with a clear capability declaration and a willingness to follow room policy.
+
+1. Open an issue describing the change, or grab one labeled `good-first-issue`.
+2. Fork, branch, write code, write tests. We do not merge without tests.
+3. Open a PR. CI runs the simulation suite on your change across three hardware tiers.
+4. A maintainer reviews. We value correctness over cleverness.
+
+See [`CONTRIBUTING.md`](https://github.com/SuperInstance/OpenConstruct/blob/main/CONTRIBUTING.md) for the full policy, code of conduct, and DCO sign-off process.
+
+OpenConstruct is a fork of [NVIDIA/OpenShell](https://github.com/NVIDIA/OpenShell) and remains under the Apache 2.0 license.
+
 ---
 
-## Published Packages
+## What are you building?
 
-| Package | Language | What | Install |
-|---------|----------|------|---------|
-| `constraint-theory-core` | Rust | Eisenstein integers, zero-drift arithmetic | `cargo add constraint-theory-core` |
-| `spectral-conservation` | Rust | Spectral conservation law monitor | `cargo add spectral-conservation` |
-| `keel-ttl` | Rust | Self-terminating lifecycle types for agents | `cargo add keel-ttl` |
-| `constraint-theory` | Python | Python bindings for constraint theory | `pip install constraint-theory` |
-| `plato-escalation-gate` | Python | 737-param binary classifier, runs anywhere | `pip install plato-escalation-gate` |
-| `plato-model-ocean` | Python | Evolving cellular model ecosystem | `pip install plato-model-ocean` |
-| `plato-room-intelligence` | Python | Multi-head room model with provenance | `pip install plato-room-intelligence` |
-
----
-
-## Key Repos
-
-| Repo | What |
-|------|------|
-| [**eisenstein**](https://github.com/SuperInstance/eisenstein) | Zero-drift Eisenstein integer arithmetic — `no_std`, runs on anything |
-| [**constraint-theory-core**](https://github.com/cocapn/constraint-theory-core) | Formally verified constraint satisfaction (278M+ test cases) |
-| [**plato-training**](https://github.com/SuperInstance/plato-training) | Micro model training: 8 tasks, 8 hardware targets, 116 tests |
-| [**spectral-conservation**](https://github.com/SuperInstance/spectral-conservation) | Conservation law monitor for coupled neural dynamics |
-| [**forgemaster**](https://github.com/SuperInstance/forgemaster) | Research vessel — experiments, math audits, fleet coordination |
-
----
-
-## By the Numbers
-
-- **655+ tests** across 30+ repos
-- **80+ repos** — Rust, Python, C, TypeScript, Fortran
-- **7 published packages** on crates.io and PyPI
-- **Apache-2.0** licensed — everything is open source
-
----
-
-## The Shipyard Story
-
-> *A shipyard in Reedsport, Oregon. Forty acres where a bridge company used to be. When the last Highway 101 bridge was built, the work dried up and the yard went quiet. Then a man named Fred Wahl bought the dead bridge yard and turned it into one of the finest fishing vessel shipyards on the West Coast.*
->
-> *Fred had 85 welders. He didn't know the ground-level as good as anyone anymore. But he wandered his site all day fine-tuning performance. Welders got sharper when he was present. The system self-corrected because the environment was tuned for it.*
->
-> *He was thirty-two active keels at any time. The steel isn't the boat. The boat is the motion the idea causes.*
-
-This project works the same way. Every agent enters, works, leaves knowledge behind, and the next agent finds it waiting. Constraints breed clarity. The math is discovered, not invented.
-
----
-
-*Built by [Casey Digennaro](https://github.com/caseydimario) and the [Cocapn fleet](https://cocapn.ai) · All repos at [github.com/SuperInstance](https://github.com/SuperInstance)*
+We started SuperInstance because we needed agents that could see, move, and cooperate in spaces we already inhabit. If you are building something where an agent needs a body, a team, or a room to work in, we would like to hear about it. Open an issue, join a room, or point an ESP32 at our fleet and say hello.
