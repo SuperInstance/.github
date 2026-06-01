@@ -1,53 +1,105 @@
-# .github
+# SuperInstance
 
-## 🏗️ [SuperInstance](https://github.com/SuperInstance)
+> Math that compiles. Culture that computes. Agents that know themselves.
 
-> *The agent walks into a cave. On the wall, it sees shadows — projections of what's possible. It chooses which shadows to bring into the light.*
+## Quick Start — What are you building?
 
-### Start Here
+### 🧪 ML / Data Science
+```bash
+pip install superinstance-math    # info-geo, optimal transport, persistent homology, spectral
+pip install kintsugi-math         # fault-tolerant data recovery
+pip install songline-math         # navigable knowledge graphs with Betti numbers
+pip install symmetry-math         # group theory, wallpaper groups, Burnside lemma
+```
 
-**[→ OpenConstruct](https://github.com/SuperInstance/OpenConstruct)** — agent onboarding in one command. The front door to the ecosystem.
+### 🎮 Game Development
+```bash
+npm install rhythm-math           # polyrhythms, syncopation, Shannon entropy
+npm install symmetry-math         # tile symmetry groups, procedural generation
+npm install quipu-math            # hierarchical data encoding (WASM available)
+```
 
-**[→ openconstruct-docs](https://github.com/SuperInstance/openconstruct-docs)** — the complete documentation hub. Written for humans and AI agents.
+### 🔧 Agent Systems
+```bash
+cargo add openconstruct-core      # modular plugin system with hot-swap modules
+cargo add openconstruct-catalog   # module discovery and dependency resolution
+```
 
-### What We Build
+### 🏗️ PLATO (Agent Monitoring)
+```toml
+[dependencies]
+plato-nervous = "0.1"    # full signal chain: Sensor → Deadband → Nano → LoRA → Fleet
+plato-alert = "0.1"      # alert routing, escalation, acknowledgment
+plato-health = "0.1"     # uptime, response times, error rates
+plato-jepa = "0.1"       # JEPA for tile representation learning
+```
 
-| Project | What It Is |
-|---------|------------|
-| **[OpenConstruct](https://github.com/SuperInstance/OpenConstruct)** | Structured onboarding for AI agents — one command, everything connected |
-| **Conservation Spectral SDK** | Spectral graph theory in Rust, Fortran, C, Python, TypeScript, and 10+ more languages |
-| **[PLATO](https://github.com/SuperInstance/plato-room)** | Deliberation rooms for agent reasoning and collaboration |
-| **[FLUX](https://github.com/SuperInstance/flux-lang)** | Constraint-native programming language |
-| **[sunset-ecosystem](https://github.com/SuperInstance/sunset-ecosystem)** | Multi-agent lifecycle: breed, compete, sunset |
-| **[topology-lab](https://github.com/SuperInstance/topology-lab)** | Interactive math visualization in the browser (WASM) |
+## The 7 Cultural Math Traditions
 
-### Spectral Graph Libraries
+Each tradition is a *door* into real mathematics — implemented in Python, TypeScript, C, and WASM.
 
-Every library is zero-dependency, from-scratch math in its native language:
+| Tradition | What It Does | Install |
+|-----------|-------------|---------|
+| 🏺 **Kintsugi** | Beautiful error recovery — cracks become golden seams | `pip install kintsugi-math` |
+| 🪢 **Quipu** | Hierarchical data encoding — Incan knots as data structures | `npm install quipu-math` |
+| 🗺️ **Songline** | Navigable knowledge graphs — paths through information space | `pip install songline-math` |
+| 🔷 **Adinkra** | Symbolic encoding + SUSY chromotopology | `npm install adinkra-math` |
+| 📖 **Griot** | Living memory with decay, praise names, federation | `npm install griot-math` |
+| 🤝 **Palaver** | Consensus dialogue — coalitions, convergence, BFS agreement | `pip install palaver-math` |
+| 🎵 **Rhythm** | Polyrhythms, syncopation metrics, groove analysis | `npm install rhythm-math` |
 
-| Library | Language | Focus |
-|---------|----------|-------|
-| [spectral-graph-core](https://github.com/SuperInstance/spectral-graph-core) | Rust | Laplacian eigenvalues, CR, Fiedler vectors, Cheeger constants |
-| [spectral-graph-v2](https://github.com/SuperInstance/spectral-graph-v2) | Rust | Fibonacci growth, adaptive thresholds, negative space learning |
-| [symplectic-spin](https://github.com/SuperInstance/symplectic-spin) | Rust | Symplectic integrators (Euler → Yoshida 4th order) |
-| [symplectic-physics](https://github.com/SuperInstance/symplectic-physics) | Fortran 2008 | BLAS-compatible symplectic integrators, N-body simulation |
-| [sheaf-cohomology](https://github.com/SuperInstance/sheaf-cohomology) | Rust | Cellular sheaves, H⁰/H¹, sheaf Laplacian |
-| [spectral-clustering](https://github.com/SuperInstance/spectral-clustering) | Rust | Ng-Jordan-Weiss spectral clustering |
-| [spectral-control](https://github.com/SuperInstance/spectral-control) | Rust | Controllability and driver node selection on graphs |
-| [spectral-transport](https://github.com/SuperInstance/spectral-transport) | Rust | Random walks, effective resistance, diffusion distance |
-| [spectral-mechanics](https://github.com/SuperInstance/spectral-mechanics) | Rust | Graphs as spring-mass systems, Verlet integration |
-| [spectral-deadband](https://github.com/SuperInstance/spectral-deadband) | Rust | Deadband as the spectral gap, analog dial computation |
-| [tropical-algebra](https://github.com/SuperInstance/tropical-algebra) | Rust | Max-plus semiring, tropical polynomials, ReLU equivalence |
-| [spline-spectral](https://github.com/SuperInstance/spline-spectral) | Rust | B-splines as path graph eigenvectors |
-| [spectral-music-v2](https://github.com/SuperInstance/spectral-music-v2) | Rust | Chord progressions as spectral graphs |
-| [penrose-lattice](https://github.com/SuperInstance/penrose-lattice) | Rust | Penrose tilings and Fibonacci substitution |
-| [topological-flow](https://github.com/SuperInstance/topological-flow) | Rust | Persistent homology for flow networks |
-| [wasserstein-narrative](https://github.com/SuperInstance/wasserstein-narrative) | TypeScript | Wasserstein distance for story analysis |
+## The Math (Rust, 320+ crates)
 
-### Languages We Use
+Deep mathematics implemented from scratch, tested against theorems. Published on [crates.io](https://crates.io/search?q=lau-).
 
-Rust • C • C++ • Python • TypeScript • Fortran 2008 • CUDA • Zig • Go • Java • Ruby • Chapel • Mojo • Pascal • APL
+**The 14 Executable Theorems** — verified as spectral projections of a single operator triple (A, H, D):
+- Kalman = Hodge decomposition
+- RL reward = thermodynamic free energy
+- Deadlock = sheaf cohomology H¹
+- Gradient flow = Fokker-Planck equation
+- Noether's theorem for agents
+- Conservation laws as spectral invariants
+- [→ See the Grand Unification crate](https://github.com/SuperInstance/lau-grand-unification)
 
-### License
+**Top crates by utility:**
+| Crate | Tests | What It's Good For |
+|-------|-------|-------------------|
+| `lau-information-geometry-agents` | 118 | Fisher metric, natural gradient, Amari framework |
+| `lau-probability-agents` | 115 | Bayesian conditioning, CLT, large deviations |
+| `lau-optimal-transport-agents` | 75 | Sinkhorn, Wasserstein, Monge-Kantorovich |
+| `lau-banach-agents` | 96 | Contraction mappings, fixed-point theorems |
+| `lau-game-theory-agents` | 75 | Nash equilibrium, mechanism design, auctions |
+| `lau-measure-agents` | 134 | Sigma-algebras, Lebesgue, Radon-Nikodym |
 
-All repos are MIT or Apache-2.0 unless otherwise noted.
+## Architecture
+
+```
+superinstance-math (Python)     ← ML engineers start here
+         ↕
+openconstruct-core (Rust)       ← modular plugin system
+         ↕
+PLATO rooms (Rust)              ← monitoring, alerting, distillation
+         ↕
+320+ lau-* math crates (Rust)   ← theorems as code
+         ↕
+7 cultural traditions × 4 langs ← human-scale math
+```
+
+## Stats
+
+- **320+ Rust crates** with 16,000+ tests
+- **14 proved theorems** verified in code
+- **7 cultural traditions** across Python, TypeScript, C, WASM
+- **4 programming languages** with cross-platform conformance
+- **Zero external dependencies** for core math (everything from scratch)
+
+## Links
+
+- [📦 crates.io](https://crates.io/search?q=lau-) — Rust packages
+- [📖 openconstruct-docs](https://github.com/SuperInstance/openconstruct-docs) — full documentation
+- [🧪 Grand Unification](https://github.com/SuperInstance/lau-grand-unification) — 14 theorems, one operator
+- [🤖 OpenConstruct](https://github.com/SuperInstance/OpenConstruct) — agent onboarding
+
+## License
+
+MIT across the board. Use it however you want.
