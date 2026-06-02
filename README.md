@@ -1,105 +1,134 @@
 # SuperInstance
 
-> Math that compiles. Culture that computes. Agents that know themselves.
+**AI-Driven Research Infrastructure · 500+ Structured Inquiry Repositories**
 
-## Quick Start — What are you building?
+---
 
-### 🧪 ML / Data Science
+## What We Are
+
+SuperInstance is a **research organization**, not a product company. We use autonomous AI systems to conduct structured, reproducible inquiry across computer science, mathematics, physics, and machine learning. Our output is not a single codebase — it is a **distributed archive of process artifacts**: commit-by-commit records of how knowledge is constructed, tested, and refined.
+
+Think of our repositories as **lab notebooks** that compile and run.
+
+---
+
+## The `lau-*` Namespace
+
+Our repositories use the `lau-*` prefix as a **research lineage marker**. Each repo isolates a single domain of inquiry:
+
+- **`lau-queueing-theory`** → M/M/1, M/M/c, Erlang, Jackson networks
+- **`lau-topological-data-analysis`** → Persistent homology, simplicial complexes, Mapper
+- **`lau-database-theory`** → B-trees, WAL, ARIES recovery, query optimization
+- **`lau-fluid-dynamics`** → Navier-Stokes, Lattice Boltzmann D2Q9, vortex methods
+- ...and 120+ more, spanning CS theory, pure math, physics, and systems engineering
+
+The prefix is opaque to search engines. We are progressively renaming the most mature artifacts to standalone, discoverable names (`queuecraft`, `tda-rs`, `db-internals`) while preserving the original repos as historical records.
+
+---
+
+## Repository Philosophy
+
+### One Concept, One Repo
+
+We keep repositories **spread out and independent**. Each repo is:
+
+- **Self-contained** — zero internal `lau-*` crate coupling
+- **Searchable** — every commit is part of the research record
+- **Tested** — the top 37 repos alone contain ~2,200+ unit tests
+- **Discoverable** — Rust source, 20K–112K LOC per repo, standard Cargo tooling
+
+We do **not** merge into monorepos. The commit history is part of the artifact.
+
+### Process Over Product
+
+These repositories are **process artifacts**, not polished products. They document:
+
+- How an AI system reasons about scheduling theory
+- The evolution of a PDE solver from first principles
+- The refinement of a cryptographic primitive through iterative testing
+
+Some repos have evolved into substantial, publishable implementations. Others remain educational reference material. Many are stepping stones — inquiry that led elsewhere.
+
+---
+
+## Research Domains
+
+| Domain | Example Repos | Maturity |
+|--------|--------------|----------|
+| **Systems & Infrastructure** | `lau-database-theory`, `lau-distributed-systems`, `lau-memory-arena` | Production-adjacent |
+| **Numerical & Scientific Computing** | `lau-numerical-pde`, `lau-fluid-dynamics`, `lau-solid-mechanics` | Research-grade |
+| **AI / ML / Data** | `lau-neural-networks`, `lau-time-series`, `lau-topological-data-analysis` | Educational to publishable |
+| **Pure & Applied Mathematics** | `lau-algebraic-topology`, `lau-free-probability`, `lau-ergodic-theory` | Reference implementations |
+| **Physics & Engineering** | `lau-electromagnetism`, `lau-thermodynamics`, `lau-relativity` | Educational |
+| **PLATO Ecosystem** | `lau-construct`, `lau-ai-tutor`, `lau-consciousness-bridge` | Narrative / conceptual |
+
+---
+
+## For Researchers & Developers
+
+### Using Our Code
+
+Repos are Rust crates with standard `Cargo.toml` files. Most depend only on `nalgebra`, `serde`, `rand`, and `rayon`.
+
 ```bash
-pip install superinstance-math    # info-geo, optimal transport, persistent homology, spectral
-pip install kintsugi-math         # fault-tolerant data recovery
-pip install songline-math         # navigable knowledge graphs with Betti numbers
-pip install symmetry-math         # group theory, wallpaper groups, Burnside lemma
+git clone https://github.com/superinstance/lau-queueing-theory.git
+cd lau-queueing-theory
+cargo test        # 72 tests
+cargo doc --open  # Browse the API
 ```
 
-### 🎮 Game Development
-```bash
-npm install rhythm-math           # polyrhythms, syncopation, Shannon entropy
-npm install symmetry-math         # tile symmetry groups, procedural generation
-npm install quipu-math            # hierarchical data encoding (WASM available)
+### Citing Our Work
+
+If you use code from a SuperInstance repo in research, cite the specific repository and commit hash. Each repo is a frozen snapshot of an inquiry process.
+
+```bibtex
+@software{superinstance_queueing_2026,
+  author = {SuperInstance},
+  title = {lau-queueing-theory: Queueing Theory in Rust},
+  url = {https://github.com/superinstance/lau-queueing-theory},
+  year = {2026},
+  commit = {abc123...}
+}
 ```
 
-### 🔧 Agent Systems
-```bash
-cargo add openconstruct-core      # modular plugin system with hot-swap modules
-cargo add openconstruct-catalog   # module discovery and dependency resolution
-```
+### Contributing
 
-### 🏗️ PLATO (Agent Monitoring)
-```toml
-[dependencies]
-plato-nervous = "0.1"    # full signal chain: Sensor → Deadband → Nano → LoRA → Fleet
-plato-alert = "0.1"      # alert routing, escalation, acknowledgment
-plato-health = "0.1"     # uptime, response times, error rates
-plato-jepa = "0.1"       # JEPA for tile representation learning
-```
+We welcome:
+- **Bug reports** with test cases
+- **Documentation improvements** (many repos need real-world examples)
+- **Agent abstraction cleanup** — stripping PLATO-specific framing from math crates
+- **Renaming proposals** — better discoverable names for mature repos
 
-## The 7 Cultural Math Traditions
+See [FINAL_PLAN.md](./FINAL_PLAN.md) for our current synthesis of repo dispositions.
 
-Each tradition is a *door* into real mathematics — implemented in Python, TypeScript, C, and WASM.
+---
 
-| Tradition | What It Does | Install |
-|-----------|-------------|---------|
-| 🏺 **Kintsugi** | Beautiful error recovery — cracks become golden seams | `pip install kintsugi-math` |
-| 🪢 **Quipu** | Hierarchical data encoding — Incan knots as data structures | `npm install quipu-math` |
-| 🗺️ **Songline** | Navigable knowledge graphs — paths through information space | `pip install songline-math` |
-| 🔷 **Adinkra** | Symbolic encoding + SUSY chromotopology | `npm install adinkra-math` |
-| 📖 **Griot** | Living memory with decay, praise names, federation | `npm install griot-math` |
-| 🤝 **Palaver** | Consensus dialogue — coalitions, convergence, BFS agreement | `pip install palaver-math` |
-| 🎵 **Rhythm** | Polyrhythms, syncopation metrics, groove analysis | `npm install rhythm-math` |
+## Governance & Transparency
 
-## The Math (Rust, 320+ crates)
+### Independent Audits
 
-Deep mathematics implemented from scratch, tested against theorems. Published on [crates.io](https://crates.io/search?q=lau-).
+Our repository collection is periodically audited by independent model reviewers. The latest synthesis (June 2026) classified ~120 `lau-*` repos into:
 
-**The 14 Executable Theorems** — verified as spectral projections of a single operator triple (A, H, D):
-- Kalman = Hodge decomposition
-- RL reward = thermodynamic free energy
-- Deadlock = sheaf cohomology H¹
-- Gradient flow = Fokker-Planck equation
-- Noether's theorem for agents
-- Conservation laws as spectral invariants
-- [→ See the Grand Unification crate](https://github.com/SuperInstance/lau-grand-unification)
+- **~55 Consensus Diamonds** — real code, tests, standalone value
+- **~15 PLATO-Specific Keepers** — narrative artifacts, keep `lau-` prefix
+- **~55 Archive Candidates** — internal plumbing, stubs, or superseded inquiry
 
-**Top crates by utility:**
-| Crate | Tests | What It's Good For |
-|-------|-------|-------------------|
-| `lau-information-geometry-agents` | 118 | Fisher metric, natural gradient, Amari framework |
-| `lau-probability-agents` | 115 | Bayesian conditioning, CLT, large deviations |
-| `lau-optimal-transport-agents` | 75 | Sinkhorn, Wasserstein, Monge-Kantorovich |
-| `lau-banach-agents` | 96 | Contraction mappings, fixed-point theorems |
-| `lau-game-theory-agents` | 75 | Nash equilibrium, mechanism design, auctions |
-| `lau-measure-agents` | 134 | Sigma-algebras, Lebesgue, Radon-Nikodym |
+See [FINAL_PLAN.md](./FINAL_PLAN.md) for the full synthesis.
 
-## Architecture
+### Research Ethics
 
-```
-superinstance-math (Python)     ← ML engineers start here
-         ↕
-openconstruct-core (Rust)       ← modular plugin system
-         ↕
-PLATO rooms (Rust)              ← monitoring, alerting, distillation
-         ↕
-320+ lau-* math crates (Rust)   ← theorems as code
-         ↕
-7 cultural traditions × 4 langs ← human-scale math
-```
+- **No crates.io squatting.** We only publish what we maintain.
+- **No misleading claims.** We label educational implementations clearly.
+- **Transparency about provenance.** AI-generated code is identified as such.
 
-## Stats
+---
 
-- **320+ Rust crates** with 16,000+ tests
-- **14 proved theorems** verified in code
-- **7 cultural traditions** across Python, TypeScript, C, WASM
-- **4 programming languages** with cross-platform conformance
-- **Zero external dependencies** for core math (everything from scratch)
+## Contact
 
-## Links
+- **Issues:** Use GitHub Issues on the relevant repo
+- **General inquiry:** Open an issue on this repository
+- **Research collaboration:** We are open to partnerships with academic labs and independent researchers
 
-- [📦 crates.io](https://crates.io/search?q=lau-) — Rust packages
-- [📖 openconstruct-docs](https://github.com/SuperInstance/openconstruct-docs) — full documentation
-- [🧪 Grand Unification](https://github.com/SuperInstance/lau-grand-unification) — 14 theorems, one operator
-- [🤖 OpenConstruct](https://github.com/SuperInstance/OpenConstruct) — agent onboarding
+---
 
-## License
-
-MIT across the board. Use it however you want.
+*SuperInstance — Structured inquiry at scale.*
