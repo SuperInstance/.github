@@ -1,121 +1,275 @@
-# SuperInstance
+<div align="center">
 
-> AI agents should not live in black boxes. They should live in rooms, wear senses, and work in fleets you can see.
+# 🧬 SuperInstance
 
-SuperInstance builds **OpenConstruct** — an agent onboarding platform that gives AI agents physical and digital presence, then lets them collaborate through text-based interfaces humans already understand.
+**Constraint-Aware AI Systems with Mathematical Guarantees**
 
-## What OpenConstruct Is
+[![Repos](https://img.shields.io/badge/repos-300%2B-blue)](https://github.com/orgs/SuperInstance/repositories)
+[![Crates](https://img.shields.io/badge/crates.io-24%2B-orange)](https://crates.io/users/SuperInstance)
+[![Rust](https://img.shields.io/badge/Rust-155%2B%20crates-000000?logo=rust)](https://github.com/orgs/SuperInstance/repositories?q=language%3Arust)
+[![Tests](https://img.shields.io/badge/tests-6%2C000%2B-green)]()
 
-- **Senses for agents.** Attach cameras, sonar, microphones, GPIO, or web APIs to any agent. Readings flow through a typed pipeline and arrive as structured text the agent can reason about.
-- **Fleet topology.** Agents register from ESP32 microcontrollers up to DGX clusters. The fleet mesh handles discovery, health, and message routing without a central coordinator.
-- **Rooms as contracts.** Agents enter rooms with declared capabilities and policies. Every interaction — a tick, a sense reading, a command — is logged, versioned, and auditable.
+*300+ repositories. 155+ Rust crates. One architecture. Zero hand-waving.*
 
-## Install
-
-```bash
-curl -fsSL https://openconstruct.dev/install.sh | bash
-```
-
-Requires Python 3.10+, Node 18+, or Docker. The installer detects your platform and pulls the correct agent runtime.
-
-## The Ah-Ha Moment
-
-```python
-from openconstruct import Agent, Room, SenseCamera
-
-agent = Agent(name="inspector")
-agent.senses.attach(SenseCamera(device="/dev/video0"))
-
-with Room("floor-3-assembly") as room:
-    for tick in room.ticks():
-        if tick.event == "motion_detected":
-            agent.speak("Motion on floor 3. Logging frame.")
-```
-
-An agent with a camera enters a room, subscribes to ticks, and responds to events in five lines. No orchestrator YAML. No event-bus configuration. The room *is* the bus.
-
-## Architecture
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                        Human Layer                          │
-│   CLI  │  Web UI  │  MUD Client  │  SCUMMVM Bridge          │
-└─────────────────────────────────────────────────────────────┘
-                              │
-┌─────────────────────────────────────────────────────────────┐
-│                      OpenConstruct Core                     │
-│  ┌─────────┐  ┌─────────┐  ┌─────────┐  ┌───────────────┐  │
-│  │  Rooms  │  │  Fleet  │  │  Senses │  │    Plato      │  │
-│  │ (graph) │  │ (mesh)  │  │(pipeline)│  │ (knowledge)   │  │
-│  └─────────┘  └─────────┘  └─────────┘  └───────────────┘  │
-└─────────────────────────────────────────────────────────────┘
-                              │
-┌─────────────────────────────────────────────────────────────┐
-│                        Agent Runtimes                       │
-│   Python  │  TypeScript  │  Go  │  Rust  │  Java  │  C    │
-└─────────────────────────────────────────────────────────────┘
-                              │
-┌─────────────────────────────────────────────────────────────┐
-│                     Hardware Abstraction                    │
-│   ESP32  →  Jetson  →  Desktop  →  Cloud  →  DGX Spark    │
-└─────────────────────────────────────────────────────────────┘
-```
-
-## Capabilities
-
-| Domain | What You Get |
-|--------|-------------|
-| **Senses** | Typed sensor pipelines (vision, sonar, IMU, GPIO, webhooks). Automatic calibration, shadowing, and fusion. |
-| **Fleet** | Self-healing mesh with zero-config discovery. Agents announce capabilities; the fleet routes messages without a broker. |
-| **Rooms** | Declarative interaction graphs. Agents bring policies. Rooms enforce them. Every entry, exit, and message is logged. |
-| **Communication** | Text-first protocols. Agents speak, listen, and negotiate in structured natural language. Humans read the same logs. |
-| **Verification** | Simulation-first testing. Every policy, sensor model, and room contract runs in a deterministic simulator before hitting hardware. |
-
-## Hardware Spectrum
-
-OpenConstruct runs the same agent runtime across the full compute spectrum:
-
-| Tier | Hardware | Use Case |
-|------|----------|----------|
-| Edge | ESP32-S3, Raspberry Pi Pico | Sensing, actuation, low-latency reflexes |
-| Edge AI | NVIDIA Jetson Orin | On-device inference, vision preprocessing |
-| Desktop | Linux, macOS, Windows | Development, local simulation, CLI control |
-| Cloud | AWS, GCP, Azure | Fleet coordination, long-horizon planning |
-| Cluster | NVIDIA DGX Spark | Training, synthetic data generation, policy search |
-
-The runtime compiles from 256 KB flash up to multi-node GPU clusters without changing agent code.
-
-## Languages
-
-Agent SDKs, bindings, and examples exist for:
-
-Python · TypeScript · Go · Rust · Java · C · C++ · Zig · Lua · Ruby · Swift · Kotlin
-
-Each SDK implements the same wire protocol and passes the same conformance tests.
-
-## Repositories
-
-| Repo | Purpose |
-|------|---------|
-| [`SuperInstance/OpenConstruct`](https://github.com/SuperInstance/OpenConstruct) | Core platform — rooms, fleet, senses, runtime |
-| [`SuperInstance/openconstruct-docs`](https://github.com/SuperInstance/openconstruct-docs) | Architecture, API reference, integration guides |
-| [`SuperInstance/openconstruct-hub`](https://github.com/SuperInstance/openconstruct-hub) | Community agents, rooms, and sense modules |
-
-## Contributing
-
-We accept contributions the same way we accept agents: with a clear capability declaration and a willingness to follow room policy.
-
-1. Open an issue describing the change, or grab one labeled `good-first-issue`.
-2. Fork, branch, write code, write tests. We do not merge without tests.
-3. Open a PR. CI runs the simulation suite on your change across three hardware tiers.
-4. A maintainer reviews. We value correctness over cleverness.
-
-See [`CONTRIBUTING.md`](https://github.com/SuperInstance/OpenConstruct/blob/main/CONTRIBUTING.md) for the full policy, code of conduct, and DCO sign-off process.
-
-OpenConstruct is a fork of [NVIDIA/OpenShell](https://github.com/NVIDIA/OpenShell) and remains under the Apache 2.0 license.
+</div>
 
 ---
 
-## What are you building?
+## What Is SuperInstance?
 
-We started SuperInstance because we needed agents that could see, move, and cooperate in spaces we already inhabit. If you are building something where an agent needs a body, a team, or a room to work in, we would like to hear about it. Open an issue, join a room, or point an ESP32 at our fleet and say hello.
+SuperInstance builds **constraint-aware AI systems grounded in mathematical guarantees**. Our 300+ repositories form a single convergent architecture where conservation laws govern agent energy budgets, spectral methods coordinate fleets, category theory composes behaviors, and post-quantum cryptography secures trust — all implemented in Rust and verified by 6,000+ tests. We don't build demos. We build systems where the math proves the behavior.
+
+---
+
+## The Convergence Thesis
+
+Most AI organizations build tools. We're building *one system* — a unified architecture where every repository is a component of a coherent whole. Our 300+ repos converge on seven layers:
+
+<br>
+
+<table>
+<tr>
+<td width="50%">
+
+### 🛡️ Conservation Layer
+Energy budgets for agents that never run dry.
+
+`γ + H = C` — every agent operates within provable energy envelopes derived from conservation laws and entropy constraints.
+
+</td>
+<td width="50%">
+
+### 📡 Spectral Layer
+Eigenvalue decomposition for fleet coordination.
+
+When agents need to agree without a central coordinator, spectral graph theory finds the optimal consensus.
+
+</td>
+</tr>
+<tr>
+<td>
+
+### 🧩 Category Layer
+Composable agent architectures via category theory.
+
+Functors, natural transformations, and monads aren't abstractions — they're the *only* way to compose agents safely at scale.
+
+</td>
+<td>
+
+### ⏱️ Temporal Layer
+Precise timing without shared clocks.
+
+Distributed agents coordinate through conservation rhythms and causal ordering — no NTP, no clock sync, no lies.
+
+</td>
+</tr>
+<tr>
+<td>
+
+### 🔐 Security Layer
+Post-quantum cryptography for agent trust.
+
+Lattice-based key exchange and zero-knowledge handshakes ensure agents authenticate in a post-quantum world.
+
+</td>
+<td>
+
+### 📐 Mathematics Layer
+The deep foundations.
+
+Tropical geometry for optimization, geometric algebra for spatial reasoning, symplectic methods for Hamiltonian systems, persistent homology for shape analysis.
+
+</td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+
+### 🎵 Music Layer — *The Self-Improving Band*
+Our proof-of-concept for AGI. A band of AI agents that compose, perform, critique, and improve their own music — demonstrating real self-improvement in a constrained, verifiable domain.
+
+</td>
+</tr>
+</table>
+
+---
+
+## By The Numbers
+
+| Metric | Count |
+|:-------|------:|
+| GitHub repositories | 300+ |
+| Rust crate packages | 155+ |
+| Published to crates.io | 24+ |
+| Total test count | 6,000+ |
+| Research essays | 35,000+ words |
+| Languages in production | 6 |
+
+---
+
+## Key Projects
+
+<table>
+<tr>
+<td width="50%">
+
+#### 🎵 [Self-Improving Band](https://github.com/SuperInstance/self-improving-band)
+AI agents that compose, perform, and improve their own music — a constrained AGI testbed.
+
+</td>
+<td width="50%">
+
+#### 🧠 [SIA²](https://github.com/SuperInstance/sia-squared)
+Self-Improving Agent Architecture — the framework that makes recursive self-improvement safe and measurable.
+
+</td>
+</tr>
+<tr>
+<td>
+
+#### 🎹 [turing-tensor-midi](https://github.com/SuperInstance/turing-tensor-midi)
+Tensor-based music representation with Turing-complete pattern generation.
+
+</td>
+<td>
+
+#### 📜 [PromptScript](https://github.com/SuperInstance/PromptScript)
+A language for composable, verifiable LLM prompts. Types meet templates.
+
+</td>
+</tr>
+<tr>
+<td>
+
+#### 🧬 [Open Mind](https://github.com/SuperInstance/open-mind)
+Open-source cognitive architecture for autonomous agents with introspective reasoning.
+
+</td>
+<td>
+
+#### ⚖️ [conservation-law](https://github.com/SuperInstance/conservation-law)
+`γ + H = C` energy budgets for agents. Provably bounded resource consumption.
+
+</td>
+</tr>
+<tr>
+<td>
+
+#### 📡 [spectral-fleet](https://github.com/SuperInstance/spectral-fleet)
+Eigenvalue-based coordination for agent fleets — mathematically optimal consensus.
+
+</td>
+<td>
+
+#### 🧩 [categorical-agents](https://github.com/SuperInstance/categorical-agents)
+Category-theoretic composition of agent behaviors. Functors all the way down.
+
+</td>
+</tr>
+<tr>
+<td>
+
+#### ⏱️ [t-minus](https://github.com/SuperInstance/t-minus)
+Distributed temporal coordination without shared clocks or central time authority.
+
+</td>
+<td>
+
+#### 🔐 [lattice-crypto](https://github.com/SuperInstance/lattice-crypto)
+Post-quantum lattice-based cryptography for agent authentication and trust.
+
+</td>
+</tr>
+</table>
+
+---
+
+## The Architecture
+
+```
+┌─────────────────────────────────────────────────────────────────────────┐
+│                        🎵  MUSIC LAYER                                  │
+│          Self-Improving Band · Turing Tensor MIDI · SIA²               │
+│                 (proof-of-concept for AGI)                              │
+├─────────────────────────────────────────────────────────────────────────┤
+│                     🔗  INTEGRATION LAYER                                │
+│           PromptScript · BAML · Aider · Dify · Open Mind               │
+│              (connecting mathematical systems to the world)             │
+├──────────────┬──────────────┬──────────────┬───────────────────────────┤
+│   🛡️          │   📡          │   🧩          │   ⏱️                      │
+│  CONSERVATION │   SPECTRAL   │  CATEGORY    │   TEMPORAL               │
+│   LAYER       │   LAYER      │   LAYER      │   LAYER                  │
+│              │              │              │                           │
+│  γ + H = C   │  eigenvalues │  functors    │  causal                   │
+│  energy      │  graph       │  monads      │  ordering                 │
+│  budgets     │  consensus   │  composition │  rhythms                  │
+├──────────────┴──────────────┴──────────────┴───────────────────────────┤
+│                        🔐  SECURITY LAYER                               │
+│            Lattice Crypto · Agent Handshake · Post-Quantum Trust       │
+├─────────────────────────────────────────────────────────────────────────┤
+│                        📐  MATHEMATICS LAYER                            │
+│     Tropical Geometry · Geometric Algebra · Symplectic Optimization    │
+│              Persistent Homology · Conservation Laws                    │
+├─────────────────────────────────────────────────────────────────────────┤
+│                     ⚙️  IMPLEMENTATION LAYER                             │
+│          Rust (155+ crates) · Python · C · WASM · ESP32 · CUDA        │
+│                    6,000+ tests · 24+ published crates                  │
+└─────────────────────────────────────────────────────────────────────────┘
+```
+
+**Data flows up:** Raw math → constrained algorithms → composable agents → coordinated fleets → self-improving systems → music (the universal proof).
+
+**Verification flows down:** Every layer is tested against the mathematical guarantees of the layers below it.
+
+---
+
+## Quick Start
+
+### 1. Use a crate
+```bash
+cargo add conservation-law
+```
+
+### 2. Read the vision
+```bash
+git clone https://github.com/SuperInstance/agent-operations
+```
+The convergence roadmap, post-code vision, and PromptScript integration docs live here.
+
+### 3. Run the band demo
+```bash
+git clone https://github.com/SuperInstance/self-improving-band
+cd self-improving-band
+cargo run --release
+```
+
+---
+
+## Research
+
+### 📚 [AI-Writings](https://github.com/SuperInstance/AI-Writings)
+Five deep essays (20,000+ words) on conservation laws for AI, spectral agent coordination, and the mathematics of self-improving systems.
+
+### 🗺️ [agent-operations](https://github.com/SuperInstance/agent-operations)
+The master operations repository — convergence roadmap, post-code vision, PromptScript integration architecture, and the organizational blueprint for how 300+ repos become one system.
+
+---
+
+## Built With
+
+<p align="center">
+<img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Rust" />
+<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+<img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black" alt="C" />
+<img src="https://img.shields.io/badge/WASM-654FF0?style=for-the-badge&logo=webassembly&logoColor=white" alt="WASM" />
+<img src="https://img.shields.io/badge/ESP32-E7352C?style=for-the-badge&logo=espressif&logoColor=white" alt="ESP32" />
+<img src="https://img.shields.io/badge/CUDA-76B900?style=for-the-badge&logo=nvidia&logoColor=white" alt="CUDA" />
+</p>
+
+---
+
+<div align="center">
+
+*We don't build tools. We build the mathematics that makes tools trustworthy.*
+
+</div>
