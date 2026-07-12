@@ -119,8 +119,8 @@ AI agents that compose, perform, and improve their own music — a constrained A
 </td>
 <td width="50%">
 
-#### 🧠 [SIA²](https://github.com/SuperInstance/sia-squared)
-Self-Improving Agent Architecture — the framework that makes recursive self-improvement safe and measurable.
+#### 🧬 [construct-core](https://github.com/SuperInstance/construct-core)
+Hardware-agnostic agent runtime with layered trait system — the Construct API.
 
 </td>
 </tr>
@@ -189,7 +189,7 @@ Post-quantum lattice-based cryptography for agent authentication and trust.
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
 │                        🎵  MUSIC LAYER                                  │
-│          Self-Improving Band · Turing Tensor MIDI · SIA²               │
+│          Self-Improving Band · Turing Tensor MIDI · Construct          │
 │                 (proof-of-concept for AGI)                              │
 ├─────────────────────────────────────────────────────────────────────────┤
 │                     🔗  INTEGRATION LAYER                                │
