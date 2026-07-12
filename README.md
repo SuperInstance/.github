@@ -40,6 +40,7 @@
 
 - 📖 **[DOCS.md](https://github.com/SuperInstance/SuperInstance/blob/main/DOCS.md)** — Architecture, concepts, and terminology
 - 📦 **[PACKAGES.md](https://github.com/SuperInstance/SuperInstance/blob/main/PACKAGES.md)** — Full package index and install guide
+- 🗺️ **[TOPICS.md](https://github.com/SuperInstance/SuperInstance/blob/main/TOPICS.md)** — Org-wide discovery map: browse by language, domain, ecosystem, and maturity
 - 🚀 **[flux-runtime README](https://github.com/SuperInstance/flux-runtime)** — Start with the reference FLUX implementation
 - 🧠 **[AI-Writings](https://github.com/SuperInstance/AI-Writings)** — Read the philosophy → `github.com/SuperInstance/AI-Writings`
 
