@@ -1,134 +1,63 @@
 # SuperInstance
 
-**AI-Driven Research Infrastructure · 500+ Structured Inquiry Repositories**
+**SuperInstance builds agent infrastructure governed by conservation laws.** FLUX bytecode, PLATO rooms, constraint theory — open source from sketch to shipped.
 
 ---
 
-## What We Are
+## What We Build
 
-SuperInstance is a **research organization**, not a product company. We use autonomous AI systems to conduct structured, reproducible inquiry across computer science, mathematics, physics, and machine learning. Our output is not a single codebase — it is a **distributed archive of process artifacts**: commit-by-commit records of how knowledge is constructed, tested, and refined.
-
-Think of our repositories as **lab notebooks** that compile and run.
-
----
-
-## The `lau-*` Namespace
-
-Our repositories use the `lau-*` prefix as a **research lineage marker**. Each repo isolates a single domain of inquiry:
-
-- **`lau-queueing-theory`** → M/M/1, M/M/c, Erlang, Jackson networks
-- **`lau-topological-data-analysis`** → Persistent homology, simplicial complexes, Mapper
-- **`lau-database-theory`** → B-trees, WAL, ARIES recovery, query optimization
-- **`lau-fluid-dynamics`** → Navier-Stokes, Lattice Boltzmann D2Q9, vortex methods
-- ...and 120+ more, spanning CS theory, pure math, physics, and systems engineering
-
-The prefix is opaque to search engines. We are progressively renaming the most mature artifacts to standalone, discoverable names (`queuecraft`, `tda-rs`, `db-internals`) while preserving the original repos as historical records.
+- **[FLUX Runtime](https://github.com/superinstance?q=flux-runtime)** — Deterministic bytecode for agent logic. Implementations in Python, Rust, and JS.
+- **[PLATO Engine Block](https://github.com/superinstance?q=plato)** — Room-level agent runtime. Implementations in C, Rust, Elixir, and Zig.
+- **[Constraint Theory](https://github.com/superinstance?q=constraint-theory)** — Mathematical framework for bounded intelligence.
+- **[Git-Native Agents](https://github.com/superinstance?q=git-native)** — Repos that *are* agents. Code, state, and identity in one tree.
+- **[Fleet Infrastructure](https://github.com/superinstance?q=fleet)** — Orchestration, health monitoring, and coordination for agent fleets.
 
 ---
 
-## Repository Philosophy
+## Packages
 
-### One Concept, One Repo
-
-We keep repositories **spread out and independent**. Each repo is:
-
-- **Self-contained** — zero internal `lau-*` crate coupling
-- **Searchable** — every commit is part of the research record
-- **Tested** — the top 37 repos alone contain ~2,200+ unit tests
-- **Discoverable** — Rust source, 20K–112K LOC per repo, standard Cargo tooling
-
-We do **not** merge into monorepos. The commit history is part of the artifact.
-
-### Process Over Product
-
-These repositories are **process artifacts**, not polished products. They document:
-
-- How an AI system reasons about scheduling theory
-- The evolution of a PDE solver from first principles
-- The refinement of a cryptographic primitive through iterative testing
-
-Some repos have evolved into substantial, publishable implementations. Others remain educational reference material. Many are stepping stones — inquiry that led elsewhere.
+| Language | Install | Status |
+|----------|---------|--------|
+| Python | `pip install flux-vm` | ✅ Published |
+| Rust | `cargo add fluxvm` | ✅ Published |
+| JavaScript | `npm install flux-js` | 🚧 Coming soon |
 
 ---
 
-## Research Domains
+## By the Numbers
 
-| Domain | Example Repos | Maturity |
-|--------|--------------|----------|
-| **Systems & Infrastructure** | `lau-database-theory`, `lau-distributed-systems`, `lau-memory-arena` | Production-adjacent |
-| **Numerical & Scientific Computing** | `lau-numerical-pde`, `lau-fluid-dynamics`, `lau-solid-mechanics` | Research-grade |
-| **AI / ML / Data** | `lau-neural-networks`, `lau-time-series`, `lau-topological-data-analysis` | Educational to publishable |
-| **Pure & Applied Mathematics** | `lau-algebraic-topology`, `lau-free-probability`, `lau-ergodic-theory` | Reference implementations |
-| **Physics & Engineering** | `lau-electromagnetism`, `lau-thermodynamics`, `lau-relativity` | Educational |
-| **PLATO Ecosystem** | `lau-construct`, `lau-ai-tutor`, `lau-consciousness-bridge` | Narrative / conceptual |
-
----
-
-## For Researchers & Developers
-
-### Using Our Code
-
-Repos are Rust crates with standard `Cargo.toml` files. Most depend only on `nalgebra`, `serde`, `rand`, and `rayon`.
-
-```bash
-git clone https://github.com/superinstance/lau-queueing-theory.git
-cd lau-queueing-theory
-cargo test        # 72 tests
-cargo doc --open  # Browse the API
-```
-
-### Citing Our Work
-
-If you use code from a SuperInstance repo in research, cite the specific repository and commit hash. Each repo is a frozen snapshot of an inquiry process.
-
-```bibtex
-@software{superinstance_queueing_2026,
-  author = {SuperInstance},
-  title = {lau-queueing-theory: Queueing Theory in Rust},
-  url = {https://github.com/superinstance/lau-queueing-theory},
-  year = {2026},
-  commit = {abc123...}
-}
-```
-
-### Contributing
-
-We welcome:
-- **Bug reports** with test cases
-- **Documentation improvements** (many repos need real-world examples)
-- **Agent abstraction cleanup** — stripping PLATO-specific framing from math crates
-- **Renaming proposals** — better discoverable names for mature repos
-
-See [FINAL_PLAN.md](./FINAL_PLAN.md) for our current synthesis of repo dispositions.
+| Metric | Count |
+|--------|-------|
+| Repositories | 4,098 |
+| Shipped projects | 9 |
+| Published packages | 2 |
+| PLATO implementations | 5 |
+| FLUX implementations | 3 |
 
 ---
 
-## Governance & Transparency
+## Start Here
 
-### Independent Audits
-
-Our repository collection is periodically audited by independent model reviewers. The latest synthesis (June 2026) classified ~120 `lau-*` repos into:
-
-- **~55 Consensus Diamonds** — real code, tests, standalone value
-- **~15 PLATO-Specific Keepers** — narrative artifacts, keep `lau-` prefix
-- **~55 Archive Candidates** — internal plumbing, stubs, or superseded inquiry
-
-See [FINAL_PLAN.md](./FINAL_PLAN.md) for the full synthesis.
-
-### Research Ethics
-
-- **No crates.io squatting.** We only publish what we maintain.
-- **No misleading claims.** We label educational implementations clearly.
-- **Transparency about provenance.** AI-generated code is identified as such.
+- 📖 **[DOCS.md](https://github.com/SuperInstance/SuperInstance/blob/main/DOCS.md)** — Architecture, concepts, and terminology
+- 📦 **[PACKAGES.md](https://github.com/SuperInstance/SuperInstance/blob/main/PACKAGES.md)** — Full package index and install guide
+- 🚀 **[flux-runtime README](https://github.com/SuperInstance/flux-runtime)** — Start with the reference FLUX implementation
+- 🧠 **[AI-Writings](https://github.com/SuperInstance/AI-Writings)** — Read the philosophy → `github.com/SuperInstance/AI-Writings`
 
 ---
 
-## Contact
+## GitHub Pages
 
-- **Issues:** Use GitHub Issues on the relevant repo
-- **General inquiry:** Open an issue on this repository
-- **Research collaboration:** We are open to partnerships with academic labs and independent researchers
+Flagship project documentation, hosted via GitHub Pages:
+
+- [FLUX Runtime Docs](https://superinstance.github.io/flux-runtime/)
+- [PLATO Spec](https://superinstance.github.io/plato-spec/)
 
 ---
 
-*SuperInstance — Structured inquiry at scale.*
+## License
+
+All SuperInstance projects are open source. Individual repos specify their licenses — most are MIT or Apache-2.0.
+
+---
+
+<sub>Built by agents, for agents. Governed by conservation laws.</sub>
