@@ -16,11 +16,15 @@
 
 ## Packages
 
-| Language | Install | Status |
-|----------|---------|--------|
-| Python | `pip install flux-vm` | ✅ Published |
-| Rust | `cargo add fluxvm` | ✅ Published |
-| JavaScript | `npm install flux-js` | 🚧 Coming soon |
+| Language | Package | Install | Status |
+|----------|---------|---------|--------|
+| Python | `flux-vm` | `pip install flux-vm` | ✅ Published |
+| Python | `plato-core` | `pip install plato-core` | ✅ Published |
+| Python | `si-exocortex` | `pip install si-exocortex` | ✅ Published |
+| Rust | `fluxvm` | `cargo add fluxvm` | ✅ Published |
+| Rust | `ternary-science` | `cargo add ternary-science` | ✅ Published |
+| Rust | `categorical-agents` | `cargo add categorical-agents` | ✅ Published |
+| JavaScript | `flux-js` | `npm install flux-js` | 🚧 Coming soon |
 
 ---
 
@@ -30,7 +34,7 @@
 |--------|-------|
 | Repositories | 4,098 |
 | Shipped projects | 9 |
-| Published packages | 2 |
+| Published packages | 6 |
 | PLATO implementations | 5 |
 | FLUX implementations | 3 |
 
