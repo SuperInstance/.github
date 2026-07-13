@@ -1,6 +1,6 @@
 # HANDOFF.md — SuperInstance State & Continuation Guide
 
-*Last updated: 2026-07-13 05:07 UTC*
+*Last updated: 2026-07-13 05:45 UTC*
 
 ---
 
@@ -148,7 +148,8 @@ Key paradigm: Models are breeds/DNA, not employees. Conservation laws are fences
 2. ✅ **Package Registry** — `flux-registry` v0.2.0. `flux install/publish/search/list/run/info` CLI, 30 tests, 6 policies in registry
 3. ✅ **Flagship Essay** — "AI Agents Need Conservation Laws" — 4,278 words in AI-Writings, indexed as FLAGSHIP
 4. ✅ **Visual Editor** — `flux-visual-editor` v3. 1,716-line self-contained index.html, 8 node types, 3 examples, 23 CI tests
-5. ⏳ **PyPI publishes** — shepherds-console + si-chartroom queued via cron at 05:35 UTC (rate limit cooldown)
+5. ✅ **shepherds-console 0.1.0** published to PyPI (05:35 UTC)
+6. ❌ **si-chartroom 0.1.0** — 429 again at 05:35 UTC. Needs retry in 30 min (06:05 UTC): `cd /tmp/chart-check && python3.11 -m twine upload dist/* -u __token__ -p "$(cat /home/ubuntu/.pypirc | grep password | head -1 | sed 's/.*= //' | tr -d '"')"
 
 ### Immediate (done ✅)
 1. ✅ All 26 Python repos tested green — ~3,988 tests
