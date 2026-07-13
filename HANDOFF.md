@@ -143,12 +143,12 @@ Key paradigm: Models are breeds/DNA, not employees. Conservation laws are fences
 
 ## Next Steps for Continuing Agent
 
-### In Progress (2026-07-13 05:05 UTC — 4 GLM-5.2 subagents running)
-1. **Cross-VM Showcase** — `flux-showcase` repo. Web app: upload .bin, watch it run identically across 3 VMs.
-2. **Package Registry** — `flux-registry` upgrade. `flux install/publish/search/run` CLI.
-3. **Flagship Essay** — "AI Agents Need Conservation Laws" for HN front page.
-4. **Visual Editor** — `flux-visual-editor` upgrade. Node-based FLUX editor, zero-build vanilla JS.
-5. **PyPI publishes** — shepherds-console + si-chartroom queued via cron at 05:35 UTC (rate limit cooldown)
+### Built This Session (2026-07-13 05:05–05:21 UTC — all 4 GLM-5.2 subagents COMPLETE)
+1. ✅ **Cross-VM Showcase** — `flux-showcase` repo. Flask app, 15 tests, 5 sample .bin programs, GitHub Pages live at https://superinstance.github.io/flux-showcase/
+2. ✅ **Package Registry** — `flux-registry` v0.2.0. `flux install/publish/search/list/run/info` CLI, 30 tests, 6 policies in registry
+3. ✅ **Flagship Essay** — "AI Agents Need Conservation Laws" — 4,278 words in AI-Writings, indexed as FLAGSHIP
+4. ✅ **Visual Editor** — `flux-visual-editor` v3. 1,716-line self-contained index.html, 8 node types, 3 examples, 23 CI tests
+5. ⏳ **PyPI publishes** — shepherds-console + si-chartroom queued via cron at 05:35 UTC (rate limit cooldown)
 
 ### Immediate (done ✅)
 1. ✅ All 26 Python repos tested green — ~3,988 tests
