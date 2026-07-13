@@ -1,6 +1,6 @@
 # HANDOFF.md — SuperInstance State & Continuation Guide
 
-*Last updated: 2026-07-13 05:00 UTC*
+*Last updated: 2026-07-13 05:07 UTC*
 
 ---
 
@@ -143,11 +143,22 @@ Key paradigm: Models are breeds/DNA, not employees. Conservation laws are fences
 
 ## Next Steps for Continuing Agent
 
-### Immediate
-1. **Verify Python repos** — clone, install, test every repo listed above. Fix failures.
-2. **Publish constraint-theory-core** to crates.io after confirming tests pass
-3. **Ensure npm publish** for flux-js (token may be needed)
-4. **Revoke old DeepInfra key** — remind Casey if still live
+### In Progress (2026-07-13 05:05 UTC — 4 GLM-5.2 subagents running)
+1. **Cross-VM Showcase** — `flux-showcase` repo. Web app: upload .bin, watch it run identically across 3 VMs.
+2. **Package Registry** — `flux-registry` upgrade. `flux install/publish/search/run` CLI.
+3. **Flagship Essay** — "AI Agents Need Conservation Laws" for HN front page.
+4. **Visual Editor** — `flux-visual-editor` upgrade. Node-based FLUX editor, zero-build vanilla JS.
+5. **PyPI publishes** — shepherds-console + si-chartroom queued via cron at 05:35 UTC (rate limit cooldown)
+
+### Immediate (done ✅)
+1. ✅ All 26 Python repos tested green — ~3,988 tests
+2. ✅ constraint-theory-core 0.1.0 published to crates.io, old versions yanked
+3. ✅ flux-js already on npm as flux-vm-js@1.0.0
+4. ✅ DeepInfra key revoked by Casey
+5. ✅ Memory index needs OpenAI key config (not currently available)
+6. ✅ .github profile README counts reconciled (497 repos, 24+ crates)
+7. ✅ GitHub releases tagged on all product repos
+8. ✅ Topics added to product repos for discoverability
 
 ### Short-term
 1. **Cross-implementation showcase** (Bet C from NEXT_HORIZONS.md) — web page running same .bin across 3 VMs
