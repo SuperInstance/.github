@@ -3,7 +3,7 @@
 *Last updated: 2026-07-13 05:45 UTC*
 
 ---
-
+6. ✅ **si-chartroom 0.1.0** — published to PyPI ✅
 ## What SuperInstance Is
 
 A constraint-aware AI systems org on GitHub (~4,098 repos). The thesis: AI agents need conservation laws (like physics), enforced by deterministic bytecode (FLUX), governed at the room level (PLATO), running edge-first (the fishing boat is the reference implementation).
