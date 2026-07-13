@@ -1,6 +1,6 @@
 # HANDOFF.md — SuperInstance State & Continuation Guide
 
-*Last updated: 2026-07-13 04:22 UTC*
+*Last updated: 2026-07-13 05:00 UTC*
 
 ---
 
@@ -60,16 +60,16 @@ A constraint-aware AI systems org on GitHub (~4,098 repos). The thesis: AI agent
 
 ## Known Issues to Address
 
-### 🔴 CRITICAL: Exposed API Key
-- **Location**: `SuperInstance-papers/research/deepinfra-ideation/deepinfra_config.py`
-- **Key**: Hardcoded DeepInfra API key in git history
-- **Status**: Casey notified, NOT YET REVOKED
-- **Action needed**: Casey must revoke this key on DeepInfra dashboard. Git history cleanup is optional (key is already compromised).
+### ✅ Exposed API Key — RESOLVED (2026-07-13)
+- Casey revoked the old DeepInfra API key ✅
+- Key in git history is now dead — no further action needed
 
-### 🟡 Version Mismatch — FIXED (2026-07-13)
+### ✅ Version Mismatch — RESOLVED (2026-07-13)
 - constraint-theory-core: ALL version files fixed to 0.1.0 (root Cargo.toml, python/Cargo.toml, python/pyproject.toml)
-- crates.io still has 2.2.1 — needs `cargo publish` to push 0.1.0 (note: semver doesn't allow downgrades, so may need to yank old versions or go to 3.0.0 and then 0.1.0 as a new series)
-- conservation-enforcer: local is 0.1.0, PyPI has 0.2.0 — version drift, local needs bump
+- Published 0.1.0 to crates.io ✅
+- Yanked ALL old versions (1.0.0, 1.0.1, 2.0.0, 2.1.0, 2.2.0, 2.2.1) ✅
+- cargo search now shows 0.1.0 as the only version ✅
+- conservation-enforcer: local is 0.1.0, PyPI has 0.2.0 — minor drift, not blocking
 
 ### ✅ npm Token — EXISTS
 - Token at `/home/ubuntu/.openclaw/.npm-token` confirmed present
