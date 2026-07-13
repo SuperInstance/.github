@@ -4,12 +4,12 @@
 
 **Constraint-Aware AI Systems with Mathematical Guarantees**
 
-[![Repos](https://img.shields.io/badge/repos-300%2B-blue)](https://github.com/orgs/SuperInstance/repositories)
+[![Repos](https://img.shields.io/badge/repos-500%2B-blue)](https://github.com/orgs/SuperInstance/repositories)
 [![Crates](https://img.shields.io/badge/crates.io-24%2B-orange)](https://crates.io/users/SuperInstance)
 [![Rust](https://img.shields.io/badge/Rust-155%2B%20crates-000000?logo=rust)](https://github.com/orgs/SuperInstance/repositories?q=language%3Arust)
 [![Tests](https://img.shields.io/badge/tests-6%2C000%2B-green)]()
 
-*300+ repositories. 155+ Rust crates. One architecture. Zero hand-waving.*
+*497 repositories. 24+ Rust crates. One architecture. Zero hand-waving.*
 
 </div>
 
@@ -17,13 +17,13 @@
 
 ## What Is SuperInstance?
 
-SuperInstance builds **constraint-aware AI systems grounded in mathematical guarantees**. Our 300+ repositories form a single convergent architecture where conservation laws govern agent energy budgets, spectral methods coordinate fleets, category theory composes behaviors, and post-quantum cryptography secures trust — all implemented in Rust and verified by 6,000+ tests. We don't build demos. We build systems where the math proves the behavior.
+SuperInstance builds **constraint-aware AI systems grounded in mathematical guarantees**. Our 497 repositories form a single convergent architecture where conservation laws govern agent energy budgets, spectral methods coordinate fleets, category theory composes behaviors, and post-quantum cryptography secures trust — all implemented in Rust and verified by 6,000+ tests. We don't build demos. We build systems where the math proves the behavior.
 
 ---
 
 ## The Convergence Thesis
 
-Most AI organizations build tools. We're building *one system* — a unified architecture where every repository is a component of a coherent whole. Our 300+ repos converge on seven layers:
+Most AI organizations build tools. We're building *one system* — a unified architecture where every repository is a component of a coherent whole. Our 497 repos converge on seven layers:
 
 <br>
 
@@ -98,8 +98,8 @@ Our proof-of-concept for AGI. A band of AI agents that compose, perform, critiqu
 
 | Metric | Count |
 |:-------|------:|
-| GitHub repositories | 300+ |
-| Rust crate packages | 155+ |
+| GitHub repositories | 497 |
+| Rust crate packages | 24+ |
 | Published to crates.io | 24+ |
 | Total test count | 6,000+ |
 | Research essays | 35,000+ words |
@@ -212,7 +212,7 @@ Post-quantum lattice-based cryptography for agent authentication and trust.
 │              Persistent Homology · Conservation Laws                    │
 ├─────────────────────────────────────────────────────────────────────────┤
 │                     ⚙️  IMPLEMENTATION LAYER                             │
-│          Rust (155+ crates) · Python · C · WASM · ESP32 · CUDA        │
+│          Rust (24+ crates) · Python · C · WASM · ESP32 · CUDA        │
 │                    6,000+ tests · 24+ published crates                  │
 └─────────────────────────────────────────────────────────────────────────┘
 ```
@@ -251,7 +251,7 @@ cargo run --release
 Five deep essays (20,000+ words) on conservation laws for AI, spectral agent coordination, and the mathematics of self-improving systems.
 
 ### 🗺️ [agent-operations](https://github.com/SuperInstance/agent-operations)
-The master operations repository — convergence roadmap, post-code vision, PromptScript integration architecture, and the organizational blueprint for how 300+ repos become one system.
+The master operations repository — convergence roadmap, post-code vision, PromptScript integration architecture, and the organizational blueprint for how 497 repos become one system.
 
 ---
 
