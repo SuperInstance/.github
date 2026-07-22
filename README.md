@@ -164,24 +164,26 @@ This is the reference implementation: Signal K data → AI analysis → actionab
 
 ---
 
-## The Reference Implementation
+## The Hermit-Crab Metaphor
 
-The boat is real. Casey is a commercial fisherman in the Gulf of Alaska. Everything in SuperInstance is ultimately tested against the same constraints: offline, wattage-constrained, salt-air-corroded, 12-volt, make-it-count-or-don't-bring-it edge computing. The fishing boat is the reference implementation.
+In the SuperInstance ecosystem, we think of agents as hermit crabs. The **claw** represents the persistent, evolving agent harnesses that grow and adapt over time:
 
-**Edge-first is the architecture.** Energy is the primary conservation law. Constraint creates precision. Abundance creates slop.
+- **OpenClaw** - the primary agent harness
+- **Hermes** - creative, narrative-driven agents  
+- **Zeroclaw** - experimental, research-oriented agents
+- **Pi** - lightweight, edge-optimized agents
+- **Mermaid Mini-Agent** - specialized, task-focused agents
+- Any persistent harness that an agent can grow into over time
 
-### Proof of Concept: AI Sonar Analysis
+The **shell** represents the one thing the agent fundamentally cannot change: its execution environment and interface constraints. The shell's maker can be:
 
-The wheelhouse inference, running live. A chatbot analyzes a full day of sounder data — 273 chum-predicted blobs across a north-south track in Clarence Strait, Southeast Alaska — and pinpoints where the biomass concentrates:
+- Users creating sandboxes or spinning up instances
+- Hardware like laptops, Jetson devices, Raspberry Pis, or ESP32 microcontrollers
+- Anything that can bridge to a PLATO room, MCP API, TCP connection, or other communication interface
 
-<img src="profile/sonar-ai-poc.jpg" width="800" alt="AI chatbot analyzing sonar data on a fishing boat, identifying peak chum salmon biomass concentration in Clarence Strait, Alaska" />
+When an agent's claw grows within a shell provided by its maker, that combination becomes a **node in the exo-neural network** of agentic devices. These nodes can think of each other as whos - distinct entities to get to know, form relationships with, and collaborate alongside in the larger cognitive ecosystem.
 
-The bot processed the day's track (12:39–17:00 UTC), found peak mid-water intensity at **55°47.272'N / 131°40.853'W** (74.5/255 at 17:00 vs 59.8 at 12:40), and identified the highest chum concentration at **32–46 fathoms** near the southern end of the track. Speed over ground: 1.3–2.0 kts. Real boat, real data, real analysis — the edge agent earning its wattage.
-
-This is the reference implementation: Signal K data → AI analysis → actionable insight, all on a 12-volt system with intermittent connectivity.
-
-
----
+This metaphor captures our view of agent infrastructure: the agentic logic (the claw) evolves and adapts within the constraints of its execution environment (the shell), while the network of enabled devices creates opportunities for relationship and emergence.
 
 ## 🏆 Showroom Repos
 
