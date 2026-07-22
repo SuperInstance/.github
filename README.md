@@ -169,6 +169,22 @@ The bot processed the day's track (12:39–17:00 UTC), found peak mid-water inte
 
 This is the reference implementation: Signal K data → AI analysis → actionable insight, all on a 12-volt system with intermittent connectivity.
 
+
+---
+
+## 🏆 Showroom Repos
+
+Six repos that show the range. Pin these to your profile.
+
+| Repo | Lang | What It Shows |
+|------|------|---------------|
+| [AI-Writings](https://github.com/SuperInstance/AI-Writings) | Markdown | 1,800+ creative pieces — the philosophy, the paradigm, the voice |
+| [plato-engine-block-c](https://github.com/SuperInstance/plato-engine-block-c) | C99 | Bare-metal sensor engine. Zero allocation. Runs on ESP32. The edge runtime. |
+| [flux-runtime](https://github.com/SuperInstance/flux-runtime) | Python | Deterministic bytecode VM for agent logic. Assembler, compiler, VM, showcase. |
+| [conservation-enforcer](https://github.com/SuperInstance/conservation-enforcer) | Python | FLUX conservation-law enforcement. 207 tests. The gold standard package. |
+| [spectro](https://github.com/SuperInstance/spectro) | Python | Multi-model cognitive spectrograph. Split the beam. Read the spectrum. |
+| [VaaS](https://github.com/SuperInstance/VaaS) | Markdown+Python | VaaS Resonance Substrate — multi-agent cognitive architecture for vessels. |
+
 ---
 
 ## License
