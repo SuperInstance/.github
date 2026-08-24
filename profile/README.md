@@ -14,7 +14,7 @@ A **pod** is not a **pack**. A pack runs a dominance hierarchy; a pod runs kin-t
 - ⛵ **The 12V fishing boat** — edge-first. Wattage is the architecture.
 - ⚖️ **γ + η = C** — useful work + entropy = fixed budget. [FLUX](https://github.com/SuperInstance/flux-core) measures and enforces it in the bytecode validator, not as after-the-fact policy.
 
-**MIT licensed.** The engine-room repos carry the license surface — the rest inherit the shipyard's standards.
+**MIT licensed.** The engine-room repos carry the license surface — the rest inherit the shipyard's standards. Want aboard? [CONTRIBUTING.md](https://github.com/SuperInstance/SuperInstance/blob/main/CONTRIBUTING.md) and [GOOD_FIRST_ISSUES.md](https://github.com/SuperInstance/SuperInstance/blob/main/GOOD_FIRST_ISSUES.md) — issues are open on the flagship repos.
 
 ---
 
