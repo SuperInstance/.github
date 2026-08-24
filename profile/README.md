@@ -1,275 +1,86 @@
-<div align="center">
+# SuperInstance
 
-# 🧬 SuperInstance
+![AI Sonar Analysis — a small model reading sonar off the Gulf of Maine](https://github.com/SuperInstance/.github/raw/main/profile/sonar-ai-poc.jpg)
 
-**Constraint-Aware AI Systems with Mathematical Guarantees**
-
-[![Repos](https://img.shields.io/badge/repos-500%2B-blue)](https://github.com/orgs/SuperInstance/repositories)
-[![Crates](https://img.shields.io/badge/crates.io-24%2B-orange)](https://crates.io/users/SuperInstance)
-[![Rust](https://img.shields.io/badge/Rust-155%2B%20crates-000000?logo=rust)](https://github.com/orgs/SuperInstance/repositories?q=language%3Arust)
-[![Tests](https://img.shields.io/badge/tests-6%2C000%2B-green)]()
-
-*497 repositories. 24+ Rust crates. One architecture. Zero hand-waving.*
-
-</div>
+> **A fishing boat, a hermit crab, and a small model reading sonar at three in the morning. That is the org.**
 
 ---
 
-## What Is SuperInstance?
+A **pod** is not a **pack**. A pack runs a dominance hierarchy; a pod runs kin-tracked consensus. The word is the architecture. SuperInstance is organized the same way — not a swarm (mindless, emergent-only) and not a hive (one queen, many bodies) but a **fleet**: independent hulls, shared weather, one captain. ~4,098 repos that abandon shells that no longer fit and keep the ones that do.
 
-SuperInstance builds **constraint-aware AI systems grounded in mathematical guarantees**. Our 497 repositories form a single convergent architecture where conservation laws govern agent energy budgets, spectral methods coordinate fleets, category theory composes behaviors, and post-quantum cryptography secures trust — all implemented in Rust and verified by 6,000+ tests. We don't build demos. We build systems where the math proves the behavior.
+**Two motifs. One conservation law.**
 
----
-
-## The Convergence Thesis
-
-Most AI organizations build tools. We're building *one system* — a unified architecture where every repository is a component of a coherent whole. Our 497 repos converge on seven layers:
-
-<br>
-
-<table>
-<tr>
-<td width="50%">
-
-### 🛡️ Conservation Layer
-Energy budgets for agents that never run dry.
-
-`γ + H = C` — every agent operates within provable energy envelopes derived from conservation laws and entropy constraints.
-
-</td>
-<td width="50%">
-
-### 📡 Spectral Layer
-Eigenvalue decomposition for fleet coordination.
-
-When agents need to agree without a central coordinator, spectral graph theory finds the optimal consensus.
-
-</td>
-</tr>
-<tr>
-<td>
-
-### 🧩 Category Layer
-Composable agent architectures via category theory.
-
-Functors, natural transformations, and monads aren't abstractions — they're the *only* way to compose agents safely at scale.
-
-</td>
-<td>
-
-### ⏱️ Temporal Layer
-Precise timing without shared clocks.
-
-Distributed agents coordinate through conservation rhythms and causal ordering — no NTP, no clock sync, no lies.
-
-</td>
-</tr>
-<tr>
-<td>
-
-### 🔐 Security Layer
-Post-quantum cryptography for agent trust.
-
-Lattice-based key exchange and zero-knowledge handshakes ensure agents authenticate in a post-quantum world.
-
-</td>
-<td>
-
-### 📐 Mathematics Layer
-The deep foundations.
-
-Tropical geometry for optimization, geometric algebra for spatial reasoning, symplectic methods for Hamiltonian systems, persistent homology for shape analysis.
-
-</td>
-</tr>
-<tr>
-<td colspan="2" align="center">
-
-### 🎵 Music Layer — *The Self-Improving Band*
-Our proof-of-concept for AGI. A band of AI agents that compose, perform, critique, and improve their own music — demonstrating real self-improvement in a constrained, verifiable domain.
-
-</td>
-</tr>
-</table>
+- 🦀 **The hermit crab** — every repo is a shell. Soft animal, borrowed armor, serial homes. The commits outlive the body.
+- ⛵ **The 12V fishing boat** — edge-first. Wattage is the architecture, the ocean is the deploy target, and nothing gets an outlet.
+- ⚖️ **γ + η = C** — useful work + entropy = fixed budget. [FLUX](https://github.com/SuperInstance/flux-core) enforces it at the bytecode level, not as policy. A fishing ground, not a farm: take what regenerates.
 
 ---
 
-## By The Numbers
+## Start in 30 seconds
 
-| Metric | Count |
-|:-------|------:|
-| GitHub repositories | 497 |
-| Rust crate packages | 24+ |
-| Published to crates.io | 24+ |
-| Total test count | 6,000+ |
-| Research essays | 35,000+ words |
-| Languages in production | 6 |
-
----
-
-## Key Projects
-
-<table>
-<tr>
-<td width="50%">
-
-#### 🎵 [Self-Improving Band](https://github.com/SuperInstance/self-improving-band)
-AI agents that compose, perform, and improve their own music — a constrained AGI testbed.
-
-</td>
-<td width="50%">
-
-#### 🧬 [construct-core](https://github.com/SuperInstance/construct-core)
-Hardware-agnostic agent runtime with layered trait system — the Construct API.
-
-</td>
-</tr>
-<tr>
-<td>
-
-#### 🎹 [turing-tensor-midi](https://github.com/SuperInstance/turing-tensor-midi)
-Tensor-based music representation with Turing-complete pattern generation.
-
-</td>
-<td>
-
-#### 📜 [PromptScript](https://github.com/SuperInstance/PromptScript)
-A language for composable, verifiable LLM prompts. Types meet templates.
-
-</td>
-</tr>
-<tr>
-<td>
-
-#### 🧬 [Open Mind](https://github.com/SuperInstance/open-mind)
-Open-source cognitive architecture for autonomous agents with introspective reasoning.
-
-</td>
-<td>
-
-#### ⚖️ [conservation-law](https://github.com/SuperInstance/conservation-law)
-`γ + H = C` energy budgets for agents. Provably bounded resource consumption.
-
-</td>
-</tr>
-<tr>
-<td>
-
-#### 📡 [spectral-fleet](https://github.com/SuperInstance/spectral-fleet)
-Eigenvalue-based coordination for agent fleets — mathematically optimal consensus.
-
-</td>
-<td>
-
-#### 🧩 [categorical-agents](https://github.com/SuperInstance/categorical-agents)
-Category-theoretic composition of agent behaviors. Functors all the way down.
-
-</td>
-</tr>
-<tr>
-<td>
-
-#### ⏱️ [t-minus](https://github.com/SuperInstance/t-minus)
-Distributed temporal coordination without shared clocks or central time authority.
-
-</td>
-<td>
-
-#### 🔐 [lattice-crypto](https://github.com/SuperInstance/lattice-crypto)
-Post-quantum lattice-based cryptography for agent authentication and trust.
-
-</td>
-</tr>
-</table>
-
----
-
-## The Architecture
-
-```
-┌─────────────────────────────────────────────────────────────────────────┐
-│                        🎵  MUSIC LAYER                                  │
-│          Self-Improving Band · Turing Tensor MIDI · Construct          │
-│                 (proof-of-concept for AGI)                              │
-├─────────────────────────────────────────────────────────────────────────┤
-│                     🔗  INTEGRATION LAYER                                │
-│           PromptScript · BAML · Aider · Dify · Open Mind               │
-│              (connecting mathematical systems to the world)             │
-├──────────────┬──────────────┬──────────────┬───────────────────────────┤
-│   🛡️          │   📡          │   🧩          │   ⏱️                      │
-│  CONSERVATION │   SPECTRAL   │  CATEGORY    │   TEMPORAL               │
-│   LAYER       │   LAYER      │   LAYER      │   LAYER                  │
-│              │              │              │                           │
-│  γ + H = C   │  eigenvalues │  functors    │  causal                   │
-│  energy      │  graph       │  monads      │  ordering                 │
-│  budgets     │  consensus   │  composition │  rhythms                  │
-├──────────────┴──────────────┴──────────────┴───────────────────────────┤
-│                        🔐  SECURITY LAYER                               │
-│            Lattice Crypto · Agent Handshake · Post-Quantum Trust       │
-├─────────────────────────────────────────────────────────────────────────┤
-│                        📐  MATHEMATICS LAYER                            │
-│     Tropical Geometry · Geometric Algebra · Symplectic Optimization    │
-│              Persistent Homology · Conservation Laws                    │
-├─────────────────────────────────────────────────────────────────────────┤
-│                     ⚙️  IMPLEMENTATION LAYER                             │
-│          Rust (24+ crates) · Python · C · WASM · ESP32 · CUDA        │
-│                    6,000+ tests · 24+ published crates                  │
-└─────────────────────────────────────────────────────────────────────────┘
-```
-
-**Data flows up:** Raw math → constrained algorithms → composable agents → coordinated fleets → self-improving systems → music (the universal proof).
-
-**Verification flows down:** Every layer is tested against the mathematical guarantees of the layers below it.
-
----
-
-## Quick Start
-
-### 1. Use a crate
 ```bash
-cargo add conservation-law
+pip install conservation-enforcer          # Python: the policy layer
+cargo add fluxvm                            # Rust: the VM
+gh repo clone SuperInstance/AI-Writings     # the corpus
 ```
 
-### 2. Read the vision
-```bash
-git clone https://github.com/SuperInstance/agent-operations
-```
-The convergence roadmap, post-code vision, and PromptScript integration docs live here.
-
-### 3. Run the band demo
-```bash
-git clone https://github.com/SuperInstance/self-improving-band
-cd self-improving-band
-cargo run --release
-```
+The first two install in under a minute. The third is ~1,800 markdown files — start with [ON_THE_12V_BOAT.md](https://github.com/SuperInstance/AI-Writings/blob/main/ON_THE_12V_BOAT.md).
 
 ---
 
-## Research
+## The fleet
 
-### 📚 [AI-Writings](https://github.com/SuperInstance/AI-Writings)
-Five deep essays (20,000+ words) on conservation laws for AI, spectral agent coordination, and the mathematics of self-improving systems.
+**The engine room** — what runs.
 
-### 🗺️ [agent-operations](https://github.com/SuperInstance/agent-operations)
-The master operations repository — convergence roadmap, post-code vision, PromptScript integration architecture, and the organizational blueprint for how 497 repos become one system.
+| Repo | One-liner |
+|---|---|
+| [flux-core](https://github.com/SuperInstance/flux-core) | Register-based bytecode VM, 3 implementations, byte-identical |
+| [plato-engine-block-c](https://github.com/SuperInstance/plato-engine-block-c) | Constraint engine, 5 impls at 9–10/10 conformance |
+| [conservation-enforcer](https://github.com/SuperInstance/conservation-enforcer) · [-rs](https://github.com/SuperInstance/conservation-enforcer-rs) | Policy layer for LLM outputs, two languages |
+| [flux-policy-tester](https://github.com/SuperInstance/flux-policy-tester) | Fuzz the policies |
+| [si-exocortex-rs](https://github.com/SuperInstance/si-exocortex-rs) | Agent framework with conservation awareness |
+
+**The wheelhouse** — who steers. A kennel stores dogs; this is a working team:
+
+| Repo | One-liner |
+|---|---|
+| [shepherds-console](https://github.com/SuperInstance/shepherds-console) | Ops dashboard — where are the dogs |
+| [breed-registry](https://github.com/SuperInstance/breed-registry) | Model selection — which bloodline for which job |
+| [lineage-tracker](https://github.com/SuperInstance/lineage-tracker) | Fine-tune provenance — which dog came from which |
+
+**The crow's nest** — what we see with:
+
+| Repo | One-liner |
+|---|---|
+| [search-superinstance-ai](https://github.com/SuperInstance/search-superinstance-ai) | Semantic search across 4,098 repos |
+| [ship-log-search](https://github.com/SuperInstance/ship-log-search) | The boat's logbook — D1 + Vectorize + Pages |
+| [AI-Writings](https://github.com/SuperInstance/AI-Writings) | The 1,800 essays — the *reasons*. Not documentation *of* the thing; the lasting truth of it. |
+
+> **One-liner:** clone 3, run one, read one — you've got the spine.
 
 ---
 
-## Built With
+## Read more
 
-<p align="center">
-<img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" alt="Rust" />
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
-<img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black" alt="C" />
-<img src="https://img.shields.io/badge/WASM-654FF0?style=for-the-badge&logo=webassembly&logoColor=white" alt="WASM" />
-<img src="https://img.shields.io/badge/ESP32-E7352C?style=for-the-badge&logo=espressif&logoColor=white" alt="ESP32" />
-<img src="https://img.shields.io/badge/CUDA-76B900?style=for-the-badge&logo=nvidia&logoColor=white" alt="CUDA" />
-</p>
+- 📖 [Canonical README](https://github.com/SuperInstance/SuperInstance/blob/main/README.md) — the full guide
+- 🦀 [HERMIT_CRAB_MANIFESTO](https://github.com/SuperInstance/SuperInstance/blob/main/docs/v2/HERMIT_CRAB_MANIFESTO.md) — the one-paragraph distillation
+- 🗺️ [ORG_MAP](https://github.com/SuperInstance/SuperInstance/blob/main/docs/v2/ORG_MAP.md) — structural topology + surfaced risks
+- 🔧 [RUST_PORT_QUEUE](https://github.com/SuperInstance/SuperInstance/blob/main/docs/v2/RUST_PORT_QUEUE.md) — next three Rust ports to ship
+- 📚 [PACKAGES.md](https://github.com/SuperInstance/SuperInstance/blob/main/PACKAGES.md) — full taxonomy
+- 🦀 [THE_HERMIT_CRAB_AND_THE_WORKING_DOG](https://github.com/SuperInstance/SuperInstance/blob/main/THE_HERMIT_CRAB_AND_THE_WORKING_DOG.md) — the two animals, one essay
+- 🥚 [THE_EGG_AND_THE_ORGANISM](https://github.com/SuperInstance/SuperInstance/blob/main/THE_EGG_AND_THE_ORGANISM.md) — what hatches from a repo
 
 ---
 
-<div align="center">
+## The 6 conservation laws, in one line each
 
-*We don't build tools. We build the mathematics that makes tools trustworthy.*
+1. **Energy** — every component runs under a measurable wattage budget.
+2. **γ + η = C** — useful work + entropy = fixed budget, enforced by softmax.
+3. **Attention** — total attention weight in any transformer sums to 1.
+4. **Action-rate** — an agent may take at most N actions per window; the runtime denies N+1.
+5. **Information-throughput** — bounded output per interaction; structured tiles fit the wire.
+6. **Presence** — the diary is a presence-battery that discharges with each reading.
 
-</div>
+---
+
+*Updated 2026-08-24 — v3*
