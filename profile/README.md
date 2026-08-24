@@ -24,7 +24,7 @@ cargo add fluxvm                            # Rust: the VM
 gh repo clone SuperInstance/AI-Writings     # the corpus
 ```
 
-The first two install in under a minute. The third is ~1,800 markdown files — start with [ON_THE_12V_BOAT.md](https://github.com/SuperInstance/AI-Writings/blob/main/ON_THE_12V_BOAT.md).
+The first two install in under a minute. The third is ~1,800 markdown files — start with [ON_THE_12V_BOAT.md](https://github.com/SuperInstance/AI-Writings/blob/master/ON_THE_12V_BOAT.md).
 
 ---
 
