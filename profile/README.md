@@ -6,25 +6,35 @@
 
 ---
 
-A **pod** is not a **pack**. A pack runs a dominance hierarchy; a pod runs kin-tracked consensus. The word is the architecture. SuperInstance is organized the same way — not a swarm (mindless, emergent-only) and not a hive (one queen, many bodies) but a **fleet**: independent hulls, shared weather, one captain. ~4,098 repos that abandon shells that no longer fit and keep the ones that do.
+A **pod** is not a **pack**. A pack runs a dominance hierarchy; a pod runs kin-tracked consensus. The word is the architecture. SuperInstance is organized the same way — not a swarm (mindless, emergent-only) and not a hive (one queen, many bodies) but a **fleet**: independent hulls, shared weather, one captain. 4,357 repos that abandon shells that no longer fit and keep the ones that do.
 
 **Two motifs. One conservation law.**
 
-- 🦀 **The hermit crab** — every repo is a shell. Soft animal, borrowed armor, serial homes. The commits outlive the body.
-- ⛵ **The 12V fishing boat** — edge-first. Wattage is the architecture, the ocean is the deploy target, and nothing gets an outlet.
-- ⚖️ **γ + η = C** — useful work + entropy = fixed budget. [FLUX](https://github.com/SuperInstance/flux-core) enforces it at the bytecode level, not as policy. A fishing ground, not a farm: take what regenerates.
+- 🦀 **The hermit crab** — every repo is a shell. Soft animal, borrowed armor, serial homes.
+- ⛵ **The 12V fishing boat** — edge-first. Wattage is the architecture.
+- ⚖️ **γ + η = C** — useful work + entropy = fixed budget. [FLUX](https://github.com/SuperInstance/flux-core) measures and enforces it in the bytecode validator, not as after-the-fact policy.
+
+**MIT licensed.** The engine-room repos carry the license surface — the rest inherit the shipyard's standards.
 
 ---
 
 ## Start in 30 seconds
 
 ```bash
-pip install conservation-enforcer          # Python: the policy layer
-cargo add fluxvm                            # Rust: the VM
-gh repo clone SuperInstance/AI-Writings     # the corpus
+pip install conservation-enforcer     # the policy layer ([PyPI](https://pypi.org/project/conservation-enforcer/))
+cargo add fluxvm                      # the VM ([crates.io](https://crates.io/crates/fluxvm))
 ```
 
-The first two install in under a minute. The third is ~1,800 markdown files — start with [ON_THE_12V_BOAT.md](https://github.com/SuperInstance/AI-Writings/blob/master/ON_THE_12V_BOAT.md).
+Then wrap any LLM call:
+
+```python
+from conservation_enforcer import ConservationEnforcer, combined_policy
+
+enforcer = ConservationEnforcer(combined_policy(max_tokens=500), budget=500)
+result = enforcer.enforce(llm_response)   # violation → rejected, with audit trail
+```
+
+Or go straight to the corpus: [AI-Writings](https://github.com/SuperInstance/AI-Writings) — ~1,800 markdown files. Start with [ON_THE_12V_BOAT.md](https://github.com/SuperInstance/AI-Writings/blob/master/ON_THE_12V_BOAT.md).
 
 ---
 
@@ -34,13 +44,13 @@ The first two install in under a minute. The third is ~1,800 markdown files — 
 
 | Repo | One-liner |
 |---|---|
-| [flux-core](https://github.com/SuperInstance/flux-core) | Register-based bytecode VM, 3 implementations, byte-identical |
-| [plato-engine-block-c](https://github.com/SuperInstance/plato-engine-block-c) | Constraint engine, 5 impls at 9–10/10 conformance |
+| [flux-core](https://github.com/SuperInstance/flux-core) | Register-based bytecode VM — Py / Rust / JS, byte-identical |
+| [plato-engine-block-c](https://github.com/SuperInstance/plato-engine-block-c) | Constraint engine — C / Rust / Elixir / Zig / Py, 5 impls |
 | [conservation-enforcer](https://github.com/SuperInstance/conservation-enforcer) · [-rs](https://github.com/SuperInstance/conservation-enforcer-rs) | Policy layer for LLM outputs, two languages |
 | [flux-policy-tester](https://github.com/SuperInstance/flux-policy-tester) | Fuzz the policies |
 | [si-exocortex-rs](https://github.com/SuperInstance/si-exocortex-rs) | Agent framework with conservation awareness |
 
-**The wheelhouse** — who steers. A kennel stores dogs; this is a working team:
+**The wheelhouse** — who steers. Working dogs on a working boat: the kennel is where they sleep, the deck is where they matter.
 
 | Repo | One-liner |
 |---|---|
@@ -52,11 +62,9 @@ The first two install in under a minute. The third is ~1,800 markdown files — 
 
 | Repo | One-liner |
 |---|---|
-| [search-superinstance-ai](https://github.com/SuperInstance/search-superinstance-ai) | Semantic search across 4,098 repos |
+| [search-superinstance-ai](https://github.com/SuperInstance/search-superinstance-ai) | Semantic search across the org |
 | [ship-log-search](https://github.com/SuperInstance/ship-log-search) | The boat's logbook — D1 + Vectorize + Pages |
 | [AI-Writings](https://github.com/SuperInstance/AI-Writings) | The 1,800 essays — the *reasons*. Not documentation *of* the thing; the lasting truth of it. |
-
-> **One-liner:** clone 3, run one, read one — you've got the spine.
 
 ---
 
@@ -72,15 +80,12 @@ The first two install in under a minute. The third is ~1,800 markdown files — 
 
 ---
 
-## The 6 conservation laws, in one line each
+## The conservation laws
 
-1. **Energy** — every component runs under a measurable wattage budget.
-2. **γ + η = C** — useful work + entropy = fixed budget, enforced by softmax.
-3. **Attention** — total attention weight in any transformer sums to 1.
-4. **Action-rate** — an agent may take at most N actions per window; the runtime denies N+1.
-5. **Information-throughput** — bounded output per interaction; structured tiles fit the wire.
-6. **Presence** — the diary is a presence-battery that discharges with each reading.
+Six of them — energy budgets, action-rate caps, attention sums, information throughput, presence. Each is enforced in code, not in vibes; the FAQ on what breaks when each is violated lives in [the canonical README](https://github.com/SuperInstance/SuperInstance/blob/main/README.md). γ + η = C is the one that started it all: the budget is fixed, spend it on useful work or lose it to entropy.
+
+> **The spine:** install one, run it, then read one. You've got the fleet.
 
 ---
 
-*Updated 2026-08-24 — v3*
+*Updated 2026-08-24 — v4*
