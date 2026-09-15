@@ -80,6 +80,16 @@ Or go straight to the corpus: [AI-Writings](https://github.com/SuperInstance/AI-
 
 ---
 
+**The lighthouse** — what we measure with. Every cell observable; nothing runs without a witness.
+
+| Repo | One-liner |
+|---|---|
+| [webgpu-profiler](https://github.com/SuperInstance/webgpu-profiler) | Browser-side WebGPU profiler — frame timing, memory, shaders, 6-pass benchmark. npm: . |
+
+> *iProfiler's law: you cannot tune a frame you cannot time. The stopwatch over the instruments.*
+
+---
+
 ## The conservation laws
 
 Six of them — energy budgets, action-rate caps, attention sums, information throughput, presence. Each is enforced in code, not in vibes; the FAQ on what breaks when each is violated lives in [the canonical README](https://github.com/SuperInstance/SuperInstance/blob/main/README.md). γ + η = C is the one that started it all: the budget is fixed, spend it on useful work or lose it to entropy.
