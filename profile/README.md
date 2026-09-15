@@ -90,6 +90,20 @@ Or go straight to the corpus: [AI-Writings](https://github.com/SuperInstance/AI-
 
 ---
 
+**The fleet fabric** — the 5 Quilt-elevated repos. Each one stands alone, each one connects to the others via the same cell-graph substrate.
+
+| Repo | One-liner | Doc trio |
+|---|---|---|
+| [quilt-Countroller](https://github.com/SuperInstance/quilt-Countroller) | Pico W + 5×5 LED + joystick + buttons + buzzers. The hello-world of the substrate. | [UPSTREAM](https://github.com/SuperInstance/quilt-Countroller/blob/main/docs/UPSTREAM.md) · [QUILT](https://github.com/SuperInstance/quilt-Countroller/blob/main/docs/QUILT.md) · [PLAIN](https://github.com/SuperInstance/quilt-Countroller/blob/main/docs/PLAIN_LANGUAGE.md) |
+| [ChainForgeLegend-Quilt](https://github.com/SuperInstance/ChainForgeLegend-Quilt) | React distributed-transaction engine as a tappable cell-graph. | [UPSTREAM](https://github.com/SuperInstance/ChainForgeLegend-Quilt/blob/main/docs/UPSTREAM.md) · [QUILT](https://github.com/SuperInstance/ChainForgeLegend-Quilt/blob/main/docs/QUILT.md) · [PLAIN](https://github.com/SuperInstance/ChainForgeLegend-Quilt/blob/main/docs/PLAIN_LANGUAGE.md) |
+| [collab-drawing-quilt](https://github.com/SuperInstance/collaborative-realtime-drawing-system-quilt) | Java/JavaFX/TCP multi-user canvas. The broadcast hub IS a router. | [UPSTREAM](https://github.com/SuperInstance/collaborative-realtime-drawing-system-quilt/blob/main/docs/UPSTREAM.md) · [QUILT](https://github.com/SuperInstance/collaborative-realtime-drawing-system-quilt/blob/main/docs/QUILT.md) · [PLAIN](https://github.com/SuperInstance/collaborative-realtime-drawing-system-quilt/blob/main/docs/PLAIN_LANGUAGE.md) |
+| [MCPMempool-quilt](https://github.com/SuperInstance/MCPMempool-quilt) | TypeScript auto-scaling memory-pool manager. Every op is a tappable cell. | [UPSTREAM](https://github.com/SuperInstance/MCPMempool-quilt/blob/main/docs/UPSTREAM.md) · [QUILT](https://github.com/SuperInstance/MCPMempool-quilt/blob/main/docs/QUILT.md) · [PLAIN](https://github.com/SuperInstance/MCPMempool-quilt/blob/main/docs/PLAIN_LANGUAGE.md) |
+| [Quilt-Robotic-Arm](https://github.com/SuperInstance/Quilt-Robotic-Arm---Gesture-Controlled) | 4-link arm + flex-sensor glove. FK as typed links. | [UPSTREAM](https://github.com/SuperInstance/Quilt-Robotic-Arm---Gesture-Controlled/blob/main/docs/UPSTREAM.md) · [QUILT](https://github.com/SuperInstance/Quilt-Robotic-Arm---Gesture-Controlled/blob/main/docs/QUILT.md) · [PLAIN](https://github.com/SuperInstance/Quilt-Robotic-Arm---Gesture-Controlled/blob/main/docs/PLAIN_LANGUAGE.md) |
+
+[Full cross-pollination report →](https://superinstance.dev/fleet-cross-pollination.html)
+
+---
+
 ## The conservation laws
 
 Six of them — energy budgets, action-rate caps, attention sums, information throughput, presence. Each is enforced in code, not in vibes; the FAQ on what breaks when each is violated lives in [the canonical README](https://github.com/SuperInstance/SuperInstance/blob/main/README.md). γ + η = C is the one that started it all: the budget is fixed, spend it on useful work or lose it to entropy.
