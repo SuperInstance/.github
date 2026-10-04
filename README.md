@@ -52,9 +52,9 @@ The first two install in under a minute. The third is ~1,800 markdown files — 
 ## Read more
 
 - 📖 [Canonical README](https://github.com/SuperInstance/SuperInstance/blob/main/README.md) — the full guide
-- 🦀 [HERMIT_CRAB_MANIFESTO](https://github.com/SuperInstance/SuperInstance/blob/main/HERMIT_CRAB_MANIFESTO.md) — the one-paragraph distillation
-- 🗺️ [ORG_MAP](https://github.com/SuperInstance/SuperInstance/blob/main/ORG_MAP.md) — structural topology + surfaced risks
-- 🔧 [RUST_PORT_QUEUE](https://github.com/SuperInstance/SuperInstance/blob/main/RUST_PORT_QUEUE.md) — next three Rust ports to ship
+- 🦀 [HERMIT_CRAB_MANIFESTO](https://github.com/SuperInstance/SuperInstance/blob/main/docs/v2/HERMIT_CRAB_MANIFESTO.md) — the one-paragraph distillation
+- 🗺️ [ORG_MAP](https://github.com/SuperInstance/SuperInstance/blob/main/docs/v2/ORG_MAP.md) — structural topology + surfaced risks
+- 🔧 [RUST_PORT_QUEUE](https://github.com/SuperInstance/SuperInstance/blob/main/docs/v2/RUST_PORT_QUEUE.md) — next three Rust ports to ship
 - 📚 [PACKAGES.md](https://github.com/SuperInstance/SuperInstance/blob/main/PACKAGES.md) — full taxonomy
 
 ---

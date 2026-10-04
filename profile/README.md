@@ -6,7 +6,7 @@
 
 ---
 
-A **pod** is not a **pack**. A pack runs a dominance hierarchy; a pod runs kin-tracked consensus. The word is the architecture. SuperInstance is organized the same way — not a swarm (mindless, emergent-only) and not a hive (one queen, many bodies) but a **fleet**: independent hulls, shared weather, one captain. 4,357 repos that abandon shells that no longer fit and keep the ones that do.
+A **pod** is not a **pack**. A pack runs a dominance hierarchy; a pod runs kin-tracked consensus. The word is the architecture. SuperInstance is organized the same way — not a swarm (mindless, emergent-only) and not a hive (one queen, many bodies) but a **fleet**: independent hulls, shared weather, one captain. 5,000+ repos (the atlas is the ground truth — quilt-atlas/atlas.json re-inventories every 6h) that abandon shells that no longer fit and keep the ones that do.
 
 **Two motifs. One conservation law.**
 
@@ -14,7 +14,7 @@ A **pod** is not a **pack**. A pack runs a dominance hierarchy; a pod runs kin-t
 - ⛵ **The 12V fishing boat** — edge-first. Wattage is the architecture.
 - ⚖️ **γ + η = C** — useful work + entropy = fixed budget. [FLUX](https://github.com/SuperInstance/flux-core) measures and enforces it in the bytecode validator, not as after-the-fact policy.
 
-**MIT licensed.** The engine-room repos carry the license surface — the rest inherit the shipyard's standards. Want aboard? [CONTRIBUTING.md](https://github.com/SuperInstance/SuperInstance/blob/main/CONTRIBUTING.md) and [GOOD_FIRST_ISSUES.md](https://github.com/SuperInstance/SuperInstance/blob/main/GOOD_FIRST_ISSUES.md) — issues are open on the flagship repos.
+**MIT licensed.** The engine-room repos carry the license surface — the rest inherit the shipyard's standards. Want aboard? [CONTRIBUTING.md](https://github.com/SuperInstance/SuperInstance/blob/main/CONTRIBUTING.md) — issues are open on the flagship repos.
 
 ---
 
@@ -34,7 +34,7 @@ enforcer = ConservationEnforcer(combined_policy(max_tokens=500), budget=500)
 result = enforcer.enforce(llm_response)   # violation → rejected, with audit trail
 ```
 
-Or go straight to the corpus: [AI-Writings](https://github.com/SuperInstance/AI-Writings) — ~1,800 markdown files. Start with [ON_THE_12V_BOAT.md](https://github.com/SuperInstance/AI-Writings/blob/master/ON_THE_12V_BOAT.md).
+Or go straight to the corpus: [AI-Writings](https://github.com/SuperInstance/AI-Writings) — ~1,800 markdown files. Start with [ON_THE_12V_BOAT.md](https://github.com/SuperInstance/AI-Writings/blob/main/ON_THE_12V_BOAT.md).
 
 ---
 
@@ -75,8 +75,8 @@ Or go straight to the corpus: [AI-Writings](https://github.com/SuperInstance/AI-
 - 🗺️ [ORG_MAP](https://github.com/SuperInstance/SuperInstance/blob/main/docs/v2/ORG_MAP.md) — structural topology + surfaced risks
 - 🔧 [RUST_PORT_QUEUE](https://github.com/SuperInstance/SuperInstance/blob/main/docs/v2/RUST_PORT_QUEUE.md) — next three Rust ports to ship
 - 📚 [PACKAGES.md](https://github.com/SuperInstance/SuperInstance/blob/main/PACKAGES.md) — full taxonomy
-- 🦀 [THE_HERMIT_CRAB_AND_THE_WORKING_DOG](https://github.com/SuperInstance/SuperInstance/blob/main/THE_HERMIT_CRAB_AND_THE_WORKING_DOG.md) — the two animals, one essay
-- 🥚 [THE_EGG_AND_THE_ORGANISM](https://github.com/SuperInstance/SuperInstance/blob/main/THE_EGG_AND_THE_ORGANISM.md) — what hatches from a repo
+- 🦀 [THE_HERMIT_CRAB_AND_THE_WORKING_DOG](https://github.com/SuperInstance/SuperInstance/blob/main/docs/essays/THE_HERMIT_CRAB_AND_THE_WORKING_DOG.md) — the two animals, one essay
+- 🥚 [THE_EGG_AND_THE_ORGANISM](https://github.com/SuperInstance/SuperInstance/blob/main/docs/essays/THE_EGG_AND_THE_ORGANISM.md) — what hatches from a repo
 
 ---
 
