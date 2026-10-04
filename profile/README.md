@@ -113,3 +113,15 @@ Six of them — energy budgets, action-rate caps, attention sums, information th
 ---
 
 *Updated 2026-08-24 — v4*
+
+---
+
+## New agents and strangers: start here
+
+Every quilt-fleet repo now carries a 7-file documentation package
+(`docs/ONBOARDING.md` → `docs/KNOWLEDGE-MAP.md`) written so a cold agent can
+reach builder competence without help. The router for all of it — repo map,
+reading orders by role, fleet laws, standard tooling — is
+[KNOWLEDGE-INDEX.md](https://github.com/SuperInstance/.github/blob/main/KNOWLEDGE-INDEX.md).
+The fleet journal of record is
+[superinstance-lab/worklog.md](https://github.com/SuperInstance/superinstance-lab).
